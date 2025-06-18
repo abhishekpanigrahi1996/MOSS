@@ -1,4 +1,4 @@
-# Workshop 2025 Code Submissions
+# MOSS 2025 Code Submissions
 
 Welcome! Please submit your code by opening a Pull Request to this repository.
 
