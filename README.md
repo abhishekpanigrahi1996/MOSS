@@ -18,6 +18,6 @@ Please follow the structure of the folder.
 
 - One submission per team.
 - Code will be made public after the workshop.
-- Deadline for submission: **DATE**.
+- Deadline for submission: **30 June, 2025**.
 
 If you have any questions, open an Issue.
