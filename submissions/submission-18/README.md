@@ -1,0 +1,116 @@
+# Mind the Gap: Removing the Discretization Gap in Differentiable Logic Gate Networks
+
+We have included both a Jupyter notebook and an Apptainer build file in this repository. For readers with a gambling addiction, we recommend running the notebook on Google Colab and restarting until you get an instance where difflogic installs successfully. In our tests, the success rate was around 10 percent. For a more reliable experience, use the Apptainer image. It has been tested with CUDA 12.2 on RTX 2080 Ti and RTX 3090 GPUs.
+
+## Apptainer Build Instructions
+
+To build the container, install [Apptainer](https://apptainer.org) and run:
+
+```bash
+apptainer build pytorch_cuda.sif apptainer.def
+```
+
+You can then run Jupyter Lab inside the container using:
+
+```bash
+apptainer run pytorch_cuda.sif
+```
+
+## Apptainer Definition File
+```apptainer
+Bootstrap: docker
+From: pytorch/pytorch:2.4.0-cuda12.4-cudnn9-devel
+Stage: build
+
+%post
+    apt-get update && apt-get install -y g++ make cmake
+    # RTX 2080 Ti: 7.5 (https://developer.nvidia.com/cuda-gpus)
+    # RTX 3090: 8.6 (https://developer.nvidia.com/cuda-gpus)
+    export TORCH_CUDA_ARCH_LIST="7.5"
+
+    pip3 install --no-cache-dir --upgrade pip
+    pip3 install --no-cache-dir tqdm scikit-learn numpy matplotlib seaborn pandas difflogic torchattacks
+
+    # Create a directory to collect necessary files
+    mkdir -p /opt/artifacts/lib/python3.11/site-packages
+
+    # Copy the installed packages into the artifacts directory
+    cp -r /opt/conda/lib/python3.11/site-packages/* /opt/artifacts/lib/python3.11/site-packages/
+
+Bootstrap: docker
+From: pytorch/pytorch:2.4.0-cuda12.4-cudnn9-runtime
+Stage: final
+
+%files from build
+    /opt/artifacts /opt/artifacts
+
+%post
+    # Install gcc
+    apt-get update && apt-get install -y g++ make cmake
+
+    # Copy files from artifacts to appropriate locations
+    cp -r /opt/artifacts/lib/python3.11/site-packages/* /opt/conda/lib/python3.11/site-packages/
+    pip3 install --no-cache-dir jupyter jupyterlab ipywidgets
+
+    # Clean up artifacts
+    rm -rf /opt/artifacts
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python --version
+    echo "To run your script, use: apptainer exec pytorch_cuda.sif python /path/to/your/script.py"
+    echo "Starting Jupyter Lab..."
+    jupyter notebook --no-browser --port 5998 --ip $(hostname -f)
+
+
+Apptainer build file:
+Bootstrap: docker
+From: pytorch/pytorch:2.4.0-cuda12.4-cudnn9-devel
+Stage: build
+
+%post
+    apt-get update && apt-get install -y g++ make cmake
+    # RTX 2080 Ti: 7.5 (https://developer.nvidia.com/cuda-gpus)
+    # RTX 3090: 8.6 (https://developer.nvidia.com/cuda-gpus)
+    export TORCH_CUDA_ARCH_LIST="7.5"
+
+    pip3 install --no-cache-dir --upgrade pip
+    pip3 install --no-cache-dir tqdm scikit-learn numpy matplotlib seaborn pandas difflogic torchattacks
+
+    # Create a directory to collect necessary files
+    mkdir -p /opt/artifacts/lib/python3.11/site-packages
+    
+    # Copy the installed packages into the artifacts directory
+    cp -r /opt/conda/lib/python3.11/site-packages/* /opt/artifacts/lib/python3.11/site-packages/
+    
+Bootstrap: docker
+From: pytorch/pytorch:2.4.0-cuda12.4-cudnn9-runtime
+Stage: final
+
+%files from build
+    /opt/artifacts /opt/artifacts
+
+%post
+    # Install gcc
+    apt-get update && apt-get install -y g++ make cmake
+
+    # Copy files from artifacts to appropriate locations
+    cp -r /opt/artifacts/lib/python3.11/site-packages/* /opt/conda/lib/python3.11/site-packages/
+    pip3 install --no-cache-dir jupyter jupyterlab ipywidgets
+    
+    # Clean up artifacts
+    rm -rf /opt/artifacts
+
+%environment
+    export LC_ALL=C
+
+%runscript
+    python --version
+    echo "To run your script, use: apptainer exec pytorch_cuda.sif python /path/to/your/script.py"
+    echo "Starting Jupyter Lab..."
+    jupyter notebook --no-browser --port 5998 --ip $(hostname -f)
+
+
+```
