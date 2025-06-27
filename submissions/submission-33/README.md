@@ -1,8 +1,20 @@
 # Exploring Diverse Solutions for Underdetermined Problems
 
-This submission contains the notebook `MOSS_final.ipynb`, which accompanies the MOSS workshop submission "Exploring Diverse Solutions for Underdetermined Problems". The notebook demonstrates the nearest-neighbor diversity loss on finite vector and function spaces, with illustrative experiments and visualizations.
+**Authors**: Eric Volkmann<sup>1</sup>, Andreas Radler<sup>1</sup>, Johannes Brandstetter<sup>1,2</sup>, Arturs Berzins<sup>1</sup>
 
-## Structure
+<sup>1</sup> LIT AI Lab, Institute for Machine Learning, JKU Linz, Austria
+
+<sup>2</sup> Emmi AI GmbH, Linz, Austria
+
+This directory contains the notebook `MOSS_final.ipynb`, which accompanies our workshop paper "Exploring Diverse Solutions for Underdetermined Problems", accepted at the MOSS workshop at ICML 2025. The notebook demonstrates the nearest-neighbor diversity loss on finite vector and function spaces, with illustrative experiments and visualizations.
+
+
+## File Overview
+
+- `MOSS_final.ipynb`: Main notebook to run experiments and create plots. 
+- `horse_shoe.py`, `model_defs.py`, `sampling_primitives.py`, `util.py`: Supporting modules for geometry, models, and utilities.
+
+## Notebook Structure
 
 - **Horseshoe Example:** Demonstrates diversity losses on a finite vector space.
 - **Flat Parametric Curve:** Shows diversity loss on simple parametric curves.
@@ -20,11 +32,10 @@ This submission contains the notebook `MOSS_final.ipynb`, which accompanies the 
 
 2. **Run the Notebook**
 
-   Open the `MOSS_final.ipynb` Jupyter Notebook execute the cells in order. The notebook will generate all results and visualizations. The notebook contains comments and markdown sections to walk you through the experiments step by step.
-   The experiments are small enough to even run on a laptop CPU within a few minutes. Utility code for setting up the models,
-   the geometry and sampling etc. is provided in `util/`. 
+   Open the `MOSS_final.ipynb` notebook and execute the cells in order. All results and visualizations will be generated. The notebook contains comments and markdown sections to walk you through the experiments step by step.
+   The experiments are small enough to run on a laptop CPU within a few minutes. Utility code for setting up the models, the geometry and sampling etc. is provided in `util/`. 
 
-## File Overview
 
-- `MOSS_final.ipynb`: Main notebook to run experiments and create plots. 
-- `horse_shoe.py`, `model_defs.py`, `sampling_primitives.py`, `util.py`: Supporting modules for geometry, models, and utilities.
+If you have questions about the code or want to get in touch, feel free to reach out via email 
+
+volkmann@ml.jku.at 
