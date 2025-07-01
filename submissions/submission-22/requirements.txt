@@ -1,0 +1,10 @@
+torch
+matplotlib
+torchvision
+pandas
+tqdm
+wandb
+tensorly
+tensorly-torch
+tntorch
+transformers
