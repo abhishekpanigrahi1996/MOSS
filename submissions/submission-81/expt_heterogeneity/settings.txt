@@ -1,0 +1,32 @@
+#dataset properties
+dataset = "128dgaussian_intrinsicdim"
+data_path = "./data"
+num_concepts = 5
+data_dim = 128
+
+#setup
+seed_id = 1
+device = "cuda"
+wandbprojectname = "intrinsic_dimX"
+experiment_date = "today"
+
+#SAE properties (some come from hyperparams, hence none)
+sae_type = "None"
+weight_init = 'random'
+normalize_decoder = 'default'
+sae_width = 512
+kval_topk = 'None'
+
+#training parameters
+batch_size = 2048
+return_concept_loss = True
+save_checkpoints = True
+resample_deadneurons = False
+optimizer = "adam"
+clip_grad = True
+online_training = True
+
+#loss terms
+regularizer = "default"
+encoder_reg = True
+gamma_reg = 'default'
