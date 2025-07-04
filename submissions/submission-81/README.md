@@ -21,10 +21,9 @@ Note: Main jupyter notebook(s) which create the figures are `mainfigs.ipynb` in 
 
 ## Overview
 
-1. *SAE Definitions*: `models.py` defines SAEs- ReLU, JumpReLU, TopK and SpaDE
-2. *Generating Synthetic Data*: `createdata_separability.ipynb`, `createdata_heterogeneity.ipynb` create datasets of gaussian clusters for the separability and heterogeneity experiments respectively. Choose location to save data by modifying `dataset_dir` in this notebook. 
-3. *Synthetic data experiments*: `expt_heterogeneity/` and `expt_separability/` have the training file `train_saes.py` and the jupyter notebook `mainfigs.ipynb` which performs analysis. The relevant experiment settings (`settings.txt`), hyperparameter files (`hyperparameters2.csv`) are also present. The bash script `run_allmodels.sh` runs `train_saes.py` for all choices of hyperparameters in `hyperparameters2.csv`.
-4. *Functions for data, training and utilities*: `functions/` includes files to preprocess/load data (`get_data.py`), training pipeline for models (`train_test.py`) and miscellaneous functions (`utils.py`)
+1. *SAE Definitions*: in `models.py`
+2. *Generating Synthetic Data*: `createdata_separability.ipynb`, `createdata_heterogeneity.ipynb` create datasets of gaussian clusters for the separability and heterogeneity experiments respectively. 
+3. *Synthetic data experiments*: training file `train_saes.py` experiment settings (`settings.txt`), hyperparameter files (`hyperparameters2.csv`). The bash script `run_allmodels.sh` trains SAEs for all hyperparameters.
 
 
 Note: _gamma_reg_ is the scaling constant for sparsity regularizer in the loss, _kval_topk_ is the _K_ in TopK
