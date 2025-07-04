@@ -12,9 +12,9 @@ Note: Main jupyter notebook(s) which create the figures are `mainfigs.ipynb` in 
 ## Usage
 
 1. *Generate synthetic data*: Run `createdata_separability.ipynb`, `createdata_heterogeneity.ipynb` 
-2. *Run Synthetic data experiments*: 
+2. *Run Synthetic data experiments*: Go to `expt_separability/` or `expt_heterogeneity/`,
 
-    a. Execute bash script `run_allmodels.sh` in `expt_separability/` or `expt_heterogeneity/`
+    a. Execute bash script `run_allmodels.sh` 
 
     b. Run analysis using `mainfigs.ipynb` 
 
