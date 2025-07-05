@@ -37,17 +37,11 @@ coverage.xml
 .hypothesis/
 
 # Output files
-output/
 tests/output/
 runs/
 results/
 
-# Old project directory
-/gmm_v2_old/
-/examples/
 
-# Archived test files
-tests/data/archive/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -63,12 +57,6 @@ tests/data/archive/
 *.log
 logs/
 
-# Planning and implementation documents
-*_PLAN.md
-*_PLAN*.md
-*INTEGRATION*.md
-IMPLEMENTATION_STATUS.md
-FLOW_SPEED_*.md
 
 # Temporary files
 *.tmp
@@ -125,12 +113,6 @@ cython_debug/
 .env.test.local
 .env.production.local
 
-# Local configuration files
-config.local.*
-*_local.yaml
-*_local.yml
-*_local.json
-
 # Profiling data
 *.prof
 
@@ -144,3 +126,5 @@ config.local.*
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+output/test

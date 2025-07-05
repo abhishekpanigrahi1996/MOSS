@@ -11,7 +11,7 @@ This submission contains a comprehensive tutorial and evaluation framework for G
 - **Comprehensive GMM Evaluation**: Complete framework for evaluating GMM models with various configurations
 - **Dataset Comparison**: Tools for comparing performance across different dataset types (Simple, Standard, Complex)
 - **SNR Analysis**: Evaluation of model performance under different Signal-to-Noise Ratios
-- **Visualization Pipeline**: Rich visualization tools for data exploration and model comparison
+- **Visualization Pipeline**: Visualization tools for data exploration and model comparison
 - **Training Framework**: Configurable training system with multiple model architectures
 - **Baseline Comparisons**: Integration with classical methods like K-means clustering
 
@@ -19,15 +19,6 @@ This submission contains a comprehensive tutorial and evaluation framework for G
 
 ### Notebooks
 - `gmm_evaluation_tutorial.ipynb`: Main tutorial notebook with step-by-step evaluation process
-- `gmm_evaluation_tutorial_new.ipynb`: Extended version with additional experiments
-
-### Core Modules
-- `model/`: GMM model implementations and architectures
-- `training/`: Training utilities and experiment management
-- `metrics/`: Evaluation metrics and performance assessment
-- `losses/`: Loss functions for GMM training
-- `utils/`: Utility functions for data handling and processing
-- `scripts/`: Evaluation scripts and tutorial utilities
 
 ### Configuration
 - `config/`: Model, training, and dataset configurations
@@ -89,15 +80,3 @@ The project uses modern Python libraries including:
 - NumPy and SciPy for numerical computations
 - Matplotlib for visualization
 - Jupyter for interactive tutorials
-
-## Total Runtime
-
-The complete tutorial takes approximately 2-3 hours to run, depending on the chosen model configurations and number of training epochs.
-
-## Output
-
-All experiments generate:
-- Model checkpoints and training logs
-- Visualization plots and comparison grids
-- Performance metrics and evaluation results
-- Animated comparisons for model behavior analysis 
