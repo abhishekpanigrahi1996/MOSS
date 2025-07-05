@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "id": "test_20250705_065056",
+    "experiment_name": "quick_test",
+    "description": "Quick test model",
+    "tags": [],
+    "created_at": "2025-07-05T06:50:56.132796",
+    "updated_at": null,
+    "user": null
+  },
+  "paths": {
+    "base_dir": "./output/test",
+    "checkpoint_dir": "checkpoints",
+    "log_dir": "logs",
+    "data_dir": "data"
+  },
+  "device": {
+    "device": "cuda",
+    "use_mixed_precision": false,
+    "precision": "float32",
+    "compile_model": false,
+    "compile_mode": "default"
+  },
+  "model": {
+    "input_dim": 2,
+    "bias": false,
+    "norm_eps": 0.00001,
+    "use_orthogonal_encdec": true,
+    "transformer": {
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "num_heads": 2,
+      "dropout": 0.1,
+      "ff_expansion": 4,
+      "activation": "gelu",
+      "norm_eps": 0.00001,
+      "attention_config": {
+        "type": "standard",
+        "use_flash_attn": true,
+        "num_features": 64,
+        "feature_eps": 1e-6
+      },
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false,
+        "distribution_mode": "direct",
+        "min_value": 0.0,
+        "max_value": 1.0,
+        "num_basis": 8,
+        "min_snr": 0.0,
+        "max_snr": 20.0,
+        "load_pretrained": false,
+        "pretrained_path": null,
+        "freeze_weights": false
+      },
+      "layer_repeat_mode": "none",
+      "repeat_factor": 1,
+      "layer_groups": null,
+      "group_repeat_factors": null
+    }
+  },
+  "training": {
+    "batch_size": 16,
+    "num_epochs": 3,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 0.001,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "momentum": 0.9,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_steps": 0,
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1,
+      "decay_steps": null,
+      "decay_rate": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "normalization": "none",
+      "snr_power": 0.0,
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 100,
+      "use_true_weights": false
+    },
+    "gradient_clip_val": null,
+    "gradient_accumulation_steps": 1,
+    "early_stopping_patience": null,
+    "early_stopping_delta": 0.0,
+    "save_best_model": true,
+    "num_train_samples": 8192,
+    "val_every": 1000,
+    "checkpoint_every": 0,
+    "show_progress_bar": true
+  },
+  "data": {
+    "dim": 2,
+    "cluster_params": {
+      "type": "truncated_poisson",
+      "lam": 5.0,
+      "min": 3,
+      "max": 7
+    },
+    "snr_db_params": {
+      "type": "truncated_normal",
+      "mean": 9.0,
+      "std": 1.5,
+      "min": 7.0,
+      "max": 12.0
+    },
+    "alpha_dirichlet": 1.0,
+    "sample_count_distribution": {
+      "type": "fixed",
+      "value": 1000
+    },
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "validation": {
+    "validation_batch_size": 64,
+    "num_val_batches": 5,
+    "num_val_samples": 1000,
+    "metrics": {
+      "enabled": true,
+      "metrics": [
+        "mse"
+      ],
+      "compare_with_kmeans": false,
+      "compute_detailed_metrics": false,
+      "metrics_cache_size": 100
+    },
+    "visualize": {
+      "enabled": false,
+      "max_samples": 4,
+      "visualize_every_n_epochs": 5,
+      "plot_dpi": 150,
+      "plot_formats": [
+        "png"
+      ],
+      "plot_with_kmeans": true,
+      "colormap": "viridis",
+      "plot_grid_size": 4
+    },
+    "fixed_validation_data": false
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_to_console": true,
+    "log_to_file": true,
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "log_date_format": "%Y-%m-%d %H:%M:%S",
+    "tensorboard_enabled": true,
+    "log_every_n_steps": 10,
+    "log_model_graph": true,
+    "log_histograms": false,
+    "histogram_every_n_epochs": 5,
+    "flush_secs": 120
+  }
+}

@@ -1,0 +1,16 @@
+2025-07-05 06:48:29 - training.experiment - INFO - Experiment 'quick_test' initialized with ID: test_20250705_064829
+2025-07-05 06:48:29 - training.experiment - INFO - Created data loaders with batch sizes: train=16, val=64
+2025-07-05 06:48:29 - model.transformer - INFO - Using flow distribution mode: direct
+2025-07-05 06:48:29 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-07-05 06:48:29 - model.transformer - INFO - GMMTransformer created with 197,184 parameters
+2025-07-05 06:48:29 - model.factory - INFO - Created cluster prediction model with 197,440 parameters
+2025-07-05 06:48:41 - training.trainer - INFO - TensorBoard logging enabled at output/test/test_20250705_064829/tensorboard
+2025-07-05 06:48:41 - training.experiment - INFO - Experiment setup completed
+2025-07-05 06:48:41 - training.trainer - INFO - Starting training for 1 epochs (from epoch 1 to 1)
+2025-07-05 06:49:11 - training.trainer - INFO - Epoch 1/1 - Train Loss: 0.059535, Train Normalized Loss: 0.059535
+2025-07-05 06:49:12 - training.trainer - INFO - Saved training data loader state to output/test/test_20250705_064829/data_state.json
+2025-07-05 06:49:12 - training.trainer - INFO - Saved validation data loader state to output/test/test_20250705_064829/val_data_state.json
+2025-07-05 06:49:12 - training.trainer - INFO - Saved training data loader state to output/test/test_20250705_064829/data_state.json
+2025-07-05 06:49:12 - training.trainer - INFO - Saved validation data loader state to output/test/test_20250705_064829/val_data_state.json
+2025-07-05 06:49:12 - training.trainer - INFO - Saved final checkpoint
+2025-07-05 06:49:12 - training.experiment - INFO - Training completed in 30.69 seconds

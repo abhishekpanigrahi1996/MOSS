@@ -1,0 +1,10 @@
+{
+  "experiment_id": "no_flow_16_layers",
+  "experiment_name": "no_flow_16_layers",
+  "training_time": 21302.331866502762,
+  "epochs_completed": 80,
+  "final_train_loss": 0.04236935574533618,
+  "final_val_loss": 0.04439512912131249,
+  "best_val_loss": 0.044158762472079616,
+  "timestamp": "2025-05-09T20:31:32.118647"
+}

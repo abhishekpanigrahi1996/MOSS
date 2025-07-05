@@ -1,0 +1,9 @@
+2025-05-26 19:48:24 - training.experiment - INFO - Experiment 'quick_test' initialized with ID: test_20250526_194824
+2025-05-26 19:48:24 - training.experiment - INFO - Created data loaders with batch sizes: train=16, val=64
+2025-05-26 19:48:24 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-26 19:48:24 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-26 19:48:24 - model.transformer - INFO - GMMTransformer created with 197,184 parameters
+2025-05-26 19:48:24 - model.factory - INFO - Created cluster prediction model with 197,440 parameters
+2025-05-26 19:48:25 - training.trainer - INFO - TensorBoard logging enabled at output/test/test_20250526_194824/tensorboard
+2025-05-26 19:48:25 - training.experiment - INFO - Experiment setup completed
+2025-05-26 19:48:25 - training.trainer - INFO - Starting training for 1 epochs (from epoch 1 to 1)
