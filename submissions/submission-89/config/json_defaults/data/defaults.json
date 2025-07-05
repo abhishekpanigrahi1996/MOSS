@@ -1,0 +1,170 @@
+{
+  "diverse_clusters_snr": {
+    "dim": 2,
+    "cluster_params": {
+      "type": "uniform",
+      "min": 2,
+      "max": 20
+    },
+    "snr_db_params": {
+      "type": "uniform",
+      "min": 3.0,
+      "max": 15.0
+    },
+    "sample_count_distribution": {
+      "type": "fixed",
+      "value": 1000
+    },
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "diverse_snr_moderate": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": {
+      "type": "uniform",
+      "min": 3.0,
+      "max": 15.0
+    },
+    "sample_count_distribution": {
+      "type": "fixed",
+      "value": 1000
+    },
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "simple": {
+    "dim": 2,
+    "cluster_params": "few",
+    "snr_db_params": "easy",
+    "sample_count_distribution": "fixed_moderate",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "high_snr_fixed": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": {
+      "type": "fixed",
+      "value": 15.0
+    },
+    "sample_count_distribution": "variable_moderate",
+    "vary_clusters_in_batch": true,
+    "vary_snr_in_batch": false,
+    "uniform_sample_count": true,
+    "random_seed": 42,
+    "num_workers": 1
+  },
+  "average_snr_fixed": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": {
+      "type": "fixed",
+      "value": 10.0
+    },
+    "sample_count_distribution": "variable_moderate",
+    "vary_clusters_in_batch": true,
+    "vary_snr_in_batch": false,
+    "uniform_sample_count": true,
+    "random_seed": 42,
+    "num_workers": 1
+  },
+  "low_snr_fixed": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": {
+      "type": "fixed",
+      "value": 5.0
+    },
+    "sample_count_distribution": "variable_moderate",
+    "vary_clusters_in_batch": true,
+    "vary_snr_in_batch": false,
+    "uniform_sample_count": true,
+    "random_seed": 42,
+    "num_workers": 1
+  },
+  "standard": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": "moderate",
+    "sample_count_distribution": "fixed_moderate",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "complex": {
+    "dim": 2,
+    "cluster_params": "many",
+    "snr_db_params": "difficult",
+    "sample_count_distribution": "fixed_moderate",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "3d": {
+    "dim": 3,
+    "cluster_params": "moderate",
+    "snr_db_params": "moderate",
+    "sample_count_distribution": "variable_moderate",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "large_fixed": {
+    "dim": 2,
+    "cluster_params": "moderate",
+    "snr_db_params": "moderate",
+    "sample_count_distribution": "fixed_large",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "fixed_clusters": {
+    "dim": 2,
+    "cluster_params": {
+      "type": "fixed",
+      "value": 5
+    },
+    "snr_db_params": "moderate",
+    "sample_count_distribution": "variable_moderate",
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "advanced": {
+    "dim": 2,
+    "cluster_params": {
+      "type": "truncated_poisson",
+      "lam": 4,
+      "min": 2,
+      "max": 10
+    },
+    "snr_db_params": {
+      "type": "truncated_normal",
+      "mean": 10,
+      "std": 3,
+      "min": 5,
+      "max": 20
+    },
+    "sample_count_distribution": {
+      "type": "choice",
+      "options": [1000, 3000],
+      "probs": [0.4, 0.6]
+    },
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": true,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  }
+}
