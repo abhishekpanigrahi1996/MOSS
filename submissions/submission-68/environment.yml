@@ -1,0 +1,17 @@
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchaudio
+  - torchvision
+  - matplotlib
+  - scipy
+  - anaconda::seaborn
+  - tqdm
+  - cvxpy
+  - scikit-learn
+  - conda-forge::tiktoken
+  - datasets
+  - conda-forge::transformers
