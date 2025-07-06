@@ -11,33 +11,17 @@ This repository contains code and analysis for research on class imbalance and l
 - Uses 3-layer CNN with 10:1 class imbalance ratio
 - Includes a video file showing how confusion matrix evolves during training
 
-### Part 2: Theoretical Analysis  
+### Part 2: Theoretical Analysis + simulation 
 - Uses Unconstrained Features Model (UFM) with SVD analysis
 - Shows how reweighting equalizes singular values in the label matrix
 - Explains why this leads to better early-stage performance
 
-## Files
-
-- `Loss_reweighting_notebook (1).ipynb`: Complete implementation
-- `Weighted_loss_on_imbalanced_data (16).pdf`: Research paper
-
-## Requirements
-
-```bash
-pip install torch torchvision numpy matplotlib seaborn scikit-learn imageio
-```
 
 ## Usage
 
 1. Run Part 1 cells to reproduce MNIST experiments
 2. Run Part 2 cells to reproduce theoretical analysis
-3. Modify parameters to experiment with different settings
 
-## Key Results
-
-- **Standard loss**: Majority class reaches 97% accuracy while minority stays at 50%
-- **Weighted loss**: Both classes achieve >90% accuracy simultaneously
-- **Early stopping**: Weighted loss shows significant advantage in first 20-30 steps
 
 ## Citation
 
