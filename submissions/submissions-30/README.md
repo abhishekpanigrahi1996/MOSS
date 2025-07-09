@@ -1,0 +1,1 @@
+This notebook explores the anticorrelation phenomena seen in test and train error rates when doing repeated cross validation. Experiments were extended to show different learning models exhibiting the same phenomena. Data analyzed is from UCI and synthetically generated. Everything needed to make the code run is completely self contained in this notebook. 
