@@ -1,0 +1,1175 @@
+2025-05-09 03:37:51 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-09 03:37:51 - __main__ - INFO - Setting up experiment
+2025-05-09 03:37:51 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-09 03:37:51 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-09 03:37:51 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-09 03:37:51 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-09 03:37:51 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-09 03:37:51 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-09 03:37:51 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-09 03:37:51 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-09 03:37:51 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-09 03:37:51 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-09 03:37:51 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-09 03:37:51 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-09 03:37:51 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-09 03:37:52 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-09 03:37:53 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-09 03:37:53 - training.experiment - INFO - Experiment setup completed
+2025-05-09 03:37:53 - __main__ - INFO - Running experiment
+2025-05-09 03:37:53 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-09 03:41:46 - training.trainer - INFO - Epoch 1/80 - Train Loss: 0.159431, Train Normalized Loss: 1.121267
+2025-05-09 03:41:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:41:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 03:45:36 - training.trainer - INFO - Epoch 2/80 - Train Loss: 0.132242, Train Normalized Loss: 0.938675
+2025-05-09 03:45:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:45:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 03:49:27 - training.trainer - INFO - Epoch 3/80 - Train Loss: 0.113465, Train Normalized Loss: 0.819872
+2025-05-09 03:49:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:49:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 03:53:16 - training.trainer - INFO - Epoch 4/80 - Train Loss: 0.087867, Train Normalized Loss: 0.638148
+2025-05-09 03:55:58 - training.trainer - INFO - Validation Loss: 0.096341, Validation Normalized Loss: 0.633408
+2025-05-09 03:55:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:55:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 03:55:58 - training.trainer - INFO - Saved best model with validation loss: 0.096341
+2025-05-09 03:55:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:55:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 03:59:47 - training.trainer - INFO - Epoch 5/80 - Train Loss: 0.078161, Train Normalized Loss: 0.534125
+2025-05-09 03:59:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 03:59:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:03:35 - training.trainer - INFO - Epoch 6/80 - Train Loss: 0.067704, Train Normalized Loss: 0.460622
+2025-05-09 04:03:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:03:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:07:24 - training.trainer - INFO - Epoch 7/80 - Train Loss: 0.063307, Train Normalized Loss: 0.430629
+2025-05-09 04:07:24 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:07:24 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:11:12 - training.trainer - INFO - Epoch 8/80 - Train Loss: 0.059423, Train Normalized Loss: 0.381735
+2025-05-09 04:13:51 - training.trainer - INFO - Validation Loss: 0.058509, Validation Normalized Loss: 0.360745
+2025-05-09 04:13:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:13:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:13:51 - training.trainer - INFO - Saved best model with validation loss: 0.058509
+2025-05-09 04:13:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:13:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:17:39 - training.trainer - INFO - Epoch 9/80 - Train Loss: 0.057224, Train Normalized Loss: 0.348418
+2025-05-09 04:17:39 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:17:39 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:21:27 - training.trainer - INFO - Epoch 10/80 - Train Loss: 0.054794, Train Normalized Loss: 0.322206
+2025-05-09 04:21:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:21:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:25:15 - training.trainer - INFO - Epoch 11/80 - Train Loss: 0.049150, Train Normalized Loss: 0.313959
+2025-05-09 04:25:15 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:25:15 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:29:04 - training.trainer - INFO - Epoch 12/80 - Train Loss: 0.047786, Train Normalized Loss: 0.298701
+2025-05-09 04:31:44 - training.trainer - INFO - Validation Loss: 0.048122, Validation Normalized Loss: 0.285610
+2025-05-09 04:31:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:31:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:31:44 - training.trainer - INFO - Saved best model with validation loss: 0.048122
+2025-05-09 04:31:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:31:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:35:32 - training.trainer - INFO - Epoch 13/80 - Train Loss: 0.049202, Train Normalized Loss: 0.295369
+2025-05-09 04:35:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:35:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:39:21 - training.trainer - INFO - Epoch 14/80 - Train Loss: 0.047884, Train Normalized Loss: 0.286468
+2025-05-09 04:39:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:39:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:43:10 - training.trainer - INFO - Epoch 15/80 - Train Loss: 0.046384, Train Normalized Loss: 0.281301
+2025-05-09 04:43:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:43:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:46:58 - training.trainer - INFO - Epoch 16/80 - Train Loss: 0.047535, Train Normalized Loss: 0.282211
+2025-05-09 04:49:39 - training.trainer - INFO - Validation Loss: 0.055473, Validation Normalized Loss: 0.320984
+2025-05-09 04:49:39 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:49:39 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:53:25 - training.trainer - INFO - Epoch 17/80 - Train Loss: 0.041382, Train Normalized Loss: 0.257991
+2025-05-09 04:53:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:53:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 04:57:12 - training.trainer - INFO - Epoch 18/80 - Train Loss: 0.045173, Train Normalized Loss: 0.262321
+2025-05-09 04:57:12 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 04:57:12 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:01:00 - training.trainer - INFO - Epoch 19/80 - Train Loss: 0.044510, Train Normalized Loss: 0.269227
+2025-05-09 05:01:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:01:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:04:48 - training.trainer - INFO - Epoch 20/80 - Train Loss: 0.043935, Train Normalized Loss: 0.264822
+2025-05-09 05:07:27 - training.trainer - INFO - Validation Loss: 0.046575, Validation Normalized Loss: 0.265791
+2025-05-09 05:07:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:07:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:07:27 - training.trainer - INFO - Saved best model with validation loss: 0.046575
+2025-05-09 05:07:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:07:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:11:16 - training.trainer - INFO - Epoch 21/80 - Train Loss: 0.044343, Train Normalized Loss: 0.264286
+2025-05-09 05:11:16 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:11:16 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:15:06 - training.trainer - INFO - Epoch 22/80 - Train Loss: 0.047915, Train Normalized Loss: 0.272744
+2025-05-09 05:15:06 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:15:06 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:18:52 - training.trainer - INFO - Epoch 23/80 - Train Loss: 0.043100, Train Normalized Loss: 0.260535
+2025-05-09 05:18:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:18:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:22:40 - training.trainer - INFO - Epoch 24/80 - Train Loss: 0.043437, Train Normalized Loss: 0.255821
+2025-05-09 05:25:18 - training.trainer - INFO - Validation Loss: 0.045771, Validation Normalized Loss: 0.257456
+2025-05-09 05:25:18 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:25:18 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:25:18 - training.trainer - INFO - Saved best model with validation loss: 0.045771
+2025-05-09 05:25:18 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:25:18 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:29:08 - training.trainer - INFO - Epoch 25/80 - Train Loss: 0.046238, Train Normalized Loss: 0.263639
+2025-05-09 05:29:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:29:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:32:57 - training.trainer - INFO - Epoch 26/80 - Train Loss: 0.043542, Train Normalized Loss: 0.264634
+2025-05-09 05:32:57 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:32:57 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:36:45 - training.trainer - INFO - Epoch 27/80 - Train Loss: 0.040786, Train Normalized Loss: 0.248877
+2025-05-09 05:36:45 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:36:45 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:40:32 - training.trainer - INFO - Epoch 28/80 - Train Loss: 0.040933, Train Normalized Loss: 0.244590
+2025-05-09 05:43:10 - training.trainer - INFO - Validation Loss: 0.044210, Validation Normalized Loss: 0.248798
+2025-05-09 05:43:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:43:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:43:10 - training.trainer - INFO - Saved best model with validation loss: 0.044210
+2025-05-09 05:43:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:43:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:46:58 - training.trainer - INFO - Epoch 29/80 - Train Loss: 0.042039, Train Normalized Loss: 0.247299
+2025-05-09 05:46:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:46:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:50:44 - training.trainer - INFO - Epoch 30/80 - Train Loss: 0.038208, Train Normalized Loss: 0.242395
+2025-05-09 05:50:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:50:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:54:33 - training.trainer - INFO - Epoch 31/80 - Train Loss: 0.043307, Train Normalized Loss: 0.252125
+2025-05-09 05:54:33 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 05:54:33 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 05:58:21 - training.trainer - INFO - Epoch 32/80 - Train Loss: 0.041183, Train Normalized Loss: 0.240212
+2025-05-09 06:01:00 - training.trainer - INFO - Validation Loss: 0.048396, Validation Normalized Loss: 0.264039
+2025-05-09 06:01:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:01:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:04:50 - training.trainer - INFO - Epoch 33/80 - Train Loss: 0.041796, Train Normalized Loss: 0.250287
+2025-05-09 06:04:50 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:04:50 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:08:38 - training.trainer - INFO - Epoch 34/80 - Train Loss: 0.041416, Train Normalized Loss: 0.245825
+2025-05-09 06:08:38 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:08:38 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:12:27 - training.trainer - INFO - Epoch 35/80 - Train Loss: 0.042020, Train Normalized Loss: 0.243575
+2025-05-09 06:12:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:12:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:16:15 - training.trainer - INFO - Epoch 36/80 - Train Loss: 0.037985, Train Normalized Loss: 0.236940
+2025-05-09 06:18:53 - training.trainer - INFO - Validation Loss: 0.043519, Validation Normalized Loss: 0.243059
+2025-05-09 06:18:54 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:18:54 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:18:54 - training.trainer - INFO - Saved best model with validation loss: 0.043519
+2025-05-09 06:18:54 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:18:54 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:22:42 - training.trainer - INFO - Epoch 37/80 - Train Loss: 0.042677, Train Normalized Loss: 0.242424
+2025-05-09 06:22:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:22:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:26:30 - training.trainer - INFO - Epoch 38/80 - Train Loss: 0.038540, Train Normalized Loss: 0.237203
+2025-05-09 06:26:30 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:26:30 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:30:16 - training.trainer - INFO - Epoch 39/80 - Train Loss: 0.040539, Train Normalized Loss: 0.228739
+2025-05-09 06:30:16 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:30:16 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:34:05 - training.trainer - INFO - Epoch 40/80 - Train Loss: 0.040404, Train Normalized Loss: 0.243866
+2025-05-09 06:36:43 - training.trainer - INFO - Validation Loss: 0.048805, Validation Normalized Loss: 0.264479
+2025-05-09 06:36:43 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:36:43 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:40:32 - training.trainer - INFO - Epoch 41/80 - Train Loss: 0.038780, Train Normalized Loss: 0.238739
+2025-05-09 06:40:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:40:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:44:19 - training.trainer - INFO - Epoch 42/80 - Train Loss: 0.039804, Train Normalized Loss: 0.233310
+2025-05-09 06:44:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:44:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:48:06 - training.trainer - INFO - Epoch 43/80 - Train Loss: 0.039617, Train Normalized Loss: 0.230597
+2025-05-09 06:48:06 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:48:06 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:51:53 - training.trainer - INFO - Epoch 44/80 - Train Loss: 0.040756, Train Normalized Loss: 0.230800
+2025-05-09 06:54:32 - training.trainer - INFO - Validation Loss: 0.041658, Validation Normalized Loss: 0.234040
+2025-05-09 06:54:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:54:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:54:32 - training.trainer - INFO - Saved best model with validation loss: 0.041658
+2025-05-09 06:54:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:54:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 06:58:20 - training.trainer - INFO - Epoch 45/80 - Train Loss: 0.039754, Train Normalized Loss: 0.235946
+2025-05-09 06:58:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 06:58:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:02:09 - training.trainer - INFO - Epoch 46/80 - Train Loss: 0.040259, Train Normalized Loss: 0.238674
+2025-05-09 07:02:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:02:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:05:58 - training.trainer - INFO - Epoch 47/80 - Train Loss: 0.038488, Train Normalized Loss: 0.233942
+2025-05-09 07:05:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:05:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:09:47 - training.trainer - INFO - Epoch 48/80 - Train Loss: 0.042088, Train Normalized Loss: 0.234813
+2025-05-09 07:12:25 - training.trainer - INFO - Validation Loss: 0.044564, Validation Normalized Loss: 0.250375
+2025-05-09 07:12:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:12:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:16:11 - training.trainer - INFO - Epoch 49/80 - Train Loss: 0.038140, Train Normalized Loss: 0.221898
+2025-05-09 07:16:11 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:16:11 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:19:58 - training.trainer - INFO - Epoch 50/80 - Train Loss: 0.038890, Train Normalized Loss: 0.219204
+2025-05-09 07:19:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:19:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:23:45 - training.trainer - INFO - Epoch 51/80 - Train Loss: 0.039359, Train Normalized Loss: 0.224999
+2025-05-09 07:23:45 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:23:45 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:27:33 - training.trainer - INFO - Epoch 52/80 - Train Loss: 0.036600, Train Normalized Loss: 0.229765
+2025-05-09 07:30:11 - training.trainer - INFO - Validation Loss: 0.042623, Validation Normalized Loss: 0.239706
+2025-05-09 07:30:12 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:30:12 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:34:00 - training.trainer - INFO - Epoch 53/80 - Train Loss: 0.038239, Train Normalized Loss: 0.232418
+2025-05-09 07:34:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:34:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:37:47 - training.trainer - INFO - Epoch 54/80 - Train Loss: 0.036676, Train Normalized Loss: 0.221228
+2025-05-09 07:37:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:37:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:41:35 - training.trainer - INFO - Epoch 55/80 - Train Loss: 0.037063, Train Normalized Loss: 0.226470
+2025-05-09 07:41:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:41:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:45:22 - training.trainer - INFO - Epoch 56/80 - Train Loss: 0.038346, Train Normalized Loss: 0.224058
+2025-05-09 07:47:59 - training.trainer - INFO - Validation Loss: 0.041947, Validation Normalized Loss: 0.235616
+2025-05-09 07:47:59 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:47:59 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:51:47 - training.trainer - INFO - Epoch 57/80 - Train Loss: 0.036945, Train Normalized Loss: 0.224776
+2025-05-09 07:51:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:51:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:55:33 - training.trainer - INFO - Epoch 58/80 - Train Loss: 0.038829, Train Normalized Loss: 0.221079
+2025-05-09 07:55:33 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:55:33 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 07:59:22 - training.trainer - INFO - Epoch 59/80 - Train Loss: 0.040528, Train Normalized Loss: 0.230477
+2025-05-09 07:59:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 07:59:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:03:08 - training.trainer - INFO - Epoch 60/80 - Train Loss: 0.036416, Train Normalized Loss: 0.211420
+2025-05-09 08:05:46 - training.trainer - INFO - Validation Loss: 0.041424, Validation Normalized Loss: 0.232612
+2025-05-09 08:05:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:05:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:05:46 - training.trainer - INFO - Saved best model with validation loss: 0.041424
+2025-05-09 08:05:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:05:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:09:35 - training.trainer - INFO - Epoch 61/80 - Train Loss: 0.036087, Train Normalized Loss: 0.222227
+2025-05-09 08:09:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:09:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:13:22 - training.trainer - INFO - Epoch 62/80 - Train Loss: 0.039009, Train Normalized Loss: 0.219789
+2025-05-09 08:13:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:13:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:17:09 - training.trainer - INFO - Epoch 63/80 - Train Loss: 0.035306, Train Normalized Loss: 0.221146
+2025-05-09 08:17:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:17:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:20:57 - training.trainer - INFO - Epoch 64/80 - Train Loss: 0.037581, Train Normalized Loss: 0.228338
+2025-05-09 08:23:35 - training.trainer - INFO - Validation Loss: 0.040858, Validation Normalized Loss: 0.229900
+2025-05-09 08:23:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:23:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:23:35 - training.trainer - INFO - Saved best model with validation loss: 0.040858
+2025-05-09 08:23:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:23:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:27:21 - training.trainer - INFO - Epoch 65/80 - Train Loss: 0.039641, Train Normalized Loss: 0.212716
+2025-05-09 08:27:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:27:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:31:09 - training.trainer - INFO - Epoch 66/80 - Train Loss: 0.036285, Train Normalized Loss: 0.221814
+2025-05-09 08:31:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:31:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:34:56 - training.trainer - INFO - Epoch 67/80 - Train Loss: 0.035631, Train Normalized Loss: 0.217567
+2025-05-09 08:34:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:34:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:38:43 - training.trainer - INFO - Epoch 68/80 - Train Loss: 0.038790, Train Normalized Loss: 0.223372
+2025-05-09 08:41:21 - training.trainer - INFO - Validation Loss: 0.039927, Validation Normalized Loss: 0.225983
+2025-05-09 08:41:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:41:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:41:21 - training.trainer - INFO - Saved best model with validation loss: 0.039927
+2025-05-09 08:41:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:41:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:45:09 - training.trainer - INFO - Epoch 69/80 - Train Loss: 0.037870, Train Normalized Loss: 0.222815
+2025-05-09 08:45:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:45:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:48:58 - training.trainer - INFO - Epoch 70/80 - Train Loss: 0.038813, Train Normalized Loss: 0.228379
+2025-05-09 08:48:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:48:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:52:46 - training.trainer - INFO - Epoch 71/80 - Train Loss: 0.038408, Train Normalized Loss: 0.216327
+2025-05-09 08:52:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:52:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:56:35 - training.trainer - INFO - Epoch 72/80 - Train Loss: 0.040416, Train Normalized Loss: 0.224208
+2025-05-09 08:59:14 - training.trainer - INFO - Validation Loss: 0.039671, Validation Normalized Loss: 0.224811
+2025-05-09 08:59:14 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:59:14 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 08:59:14 - training.trainer - INFO - Saved best model with validation loss: 0.039671
+2025-05-09 08:59:14 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 08:59:14 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:03:02 - training.trainer - INFO - Epoch 73/80 - Train Loss: 0.037656, Train Normalized Loss: 0.226660
+2025-05-09 09:03:02 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:03:02 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:06:50 - training.trainer - INFO - Epoch 74/80 - Train Loss: 0.042499, Train Normalized Loss: 0.223140
+2025-05-09 09:06:50 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:06:50 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:10:38 - training.trainer - INFO - Epoch 75/80 - Train Loss: 0.037579, Train Normalized Loss: 0.223013
+2025-05-09 09:10:38 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:10:38 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:14:27 - training.trainer - INFO - Epoch 76/80 - Train Loss: 0.039632, Train Normalized Loss: 0.229811
+2025-05-09 09:17:05 - training.trainer - INFO - Validation Loss: 0.041130, Validation Normalized Loss: 0.231995
+2025-05-09 09:17:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:17:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:20:51 - training.trainer - INFO - Epoch 77/80 - Train Loss: 0.038076, Train Normalized Loss: 0.212048
+2025-05-09 09:20:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:20:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:24:39 - training.trainer - INFO - Epoch 78/80 - Train Loss: 0.038333, Train Normalized Loss: 0.221019
+2025-05-09 09:24:39 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:24:39 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:28:27 - training.trainer - INFO - Epoch 79/80 - Train Loss: 0.038318, Train Normalized Loss: 0.223589
+2025-05-09 09:28:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:28:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:32:14 - training.trainer - INFO - Epoch 80/80 - Train Loss: 0.036748, Train Normalized Loss: 0.219420
+2025-05-09 09:34:53 - training.trainer - INFO - Validation Loss: 0.039359, Validation Normalized Loss: 0.222809
+2025-05-09 09:34:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved best model with validation loss: 0.039359
+2025-05-09 09:34:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_16_layers/data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_16_layers/val_data_state.json
+2025-05-09 09:34:53 - training.trainer - INFO - Saved final checkpoint
+2025-05-09 09:34:53 - training.experiment - INFO - Training completed in 21420.15 seconds
+2025-05-09 09:34:53 - __main__ - INFO - Experiment baseline_16_layers completed successfully
+2025-05-12 02:45:23 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-12 02:45:23 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-12 02:45:23 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-12 02:45:23 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-12 02:45:23 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-12 02:45:23 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-12 02:45:23 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-12 02:45:23 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-12 02:45:23 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-12 02:45:23 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-12 02:45:23 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-12 02:45:23 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-12 02:45:23 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-12 02:45:23 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-12 02:45:23 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-12 02:45:25 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-12 02:45:25 - training.experiment - INFO - Experiment setup completed
+2025-05-12 02:45:25 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-12 02:45:25 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-12 02:45:25 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/baseline_32_layers/config.json
+2025-05-12 02:46:23 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-12 02:46:23 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-12 02:46:23 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-12 02:46:23 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-12 02:46:23 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-12 02:46:23 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-12 02:46:23 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-12 02:46:23 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-12 02:46:23 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-12 02:46:23 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-12 02:46:23 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-12 02:46:23 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-12 02:46:23 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-12 02:46:23 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-12 02:46:23 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-12 02:46:24 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-12 02:46:24 - training.experiment - INFO - Experiment setup completed
+2025-05-12 02:46:24 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-12 02:46:24 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-12 02:46:24 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/baseline_32_layers/config.json
+2025-05-14 01:36:13 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 01:36:13 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 01:36:13 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 01:36:13 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 01:36:13 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 01:36:13 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 01:36:13 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 01:36:13 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 01:36:13 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 01:36:13 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 01:36:13 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 01:36:13 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 01:36:13 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 01:36:13 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 01:36:13 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 01:36:14 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 01:36:14 - training.experiment - INFO - Experiment setup completed
+2025-05-14 01:36:14 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 01:36:14 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 01:36:14 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/baseline_32_layers/config.json
+2025-05-14 02:18:53 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 02:18:53 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 02:18:53 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 02:18:53 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 02:18:53 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 02:18:53 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 02:18:53 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 02:18:53 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 02:18:53 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 02:18:53 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 02:18:53 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 02:18:53 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 02:18:53 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 02:18:53 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 02:18:54 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 02:18:54 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 02:18:54 - training.experiment - INFO - Experiment setup completed
+2025-05-14 02:18:54 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 02:18:54 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 02:22:42 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 02:22:42 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 02:22:42 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 02:22:42 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 02:22:42 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 02:22:42 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 02:22:42 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 02:22:42 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 02:22:42 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 02:22:42 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 02:22:42 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 02:22:42 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 02:22:42 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 02:22:42 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 02:22:42 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 02:22:43 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 02:22:43 - training.experiment - INFO - Experiment setup completed
+2025-05-14 02:22:43 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 02:22:43 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 02:25:05 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 02:25:05 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 02:25:05 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 02:25:05 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 02:25:05 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 02:25:05 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 02:25:05 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 02:25:05 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 02:25:05 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 02:25:05 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 02:25:05 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 02:25:05 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 02:25:05 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 02:25:05 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 02:25:05 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 02:25:06 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 02:25:06 - training.experiment - INFO - Experiment setup completed
+2025-05-14 02:25:06 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 02:25:06 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 03:30:16 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 03:30:16 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 03:30:16 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 03:30:16 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 03:30:16 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 03:30:16 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 03:30:16 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 03:30:16 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 03:30:16 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 03:30:16 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 03:30:16 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 03:30:16 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 03:30:16 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 03:30:16 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 03:30:16 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 03:30:17 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 03:30:17 - training.experiment - INFO - Experiment setup completed
+2025-05-14 03:30:17 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 03:30:17 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 03:49:16 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 03:49:16 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 03:49:16 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 03:49:16 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 03:49:16 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 03:49:16 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 03:49:16 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 03:49:16 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 03:49:16 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 03:49:16 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 03:49:16 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 03:49:16 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 03:49:16 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 03:49:16 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 03:49:17 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 03:49:17 - training.trainer - INFO - TensorBoard logging enabled at ../output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 03:49:17 - training.experiment - INFO - Experiment setup completed
+2025-05-14 03:49:17 - training.trainer - INFO - Loaded checkpoint from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 03:49:17 - training.experiment - INFO - Loaded latest model from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 03:53:21 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 03:53:21 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 03:53:21 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 03:53:21 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 03:53:21 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 03:53:21 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 03:53:21 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 03:53:21 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 03:53:21 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 03:53:21 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 03:53:21 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 03:53:21 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 03:53:21 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 03:53:21 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 03:53:22 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 03:53:22 - training.trainer - INFO - TensorBoard logging enabled at ../output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 03:53:22 - training.experiment - INFO - Experiment setup completed
+2025-05-14 03:53:22 - training.trainer - INFO - Loaded checkpoint from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 03:53:22 - training.experiment - INFO - Loaded latest model from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 03:53:22 - config.base - INFO - Configuration loaded from ../output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 04:08:05 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:08:05 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:08:05 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:08:05 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:08:05 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:08:05 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:08:05 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:08:05 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:08:05 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:08:05 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:08:05 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:08:05 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:08:05 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:08:05 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:08:05 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:08:06 - training.trainer - INFO - TensorBoard logging enabled at ../output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:08:06 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:08:06 - training.trainer - INFO - Loaded checkpoint from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:08:06 - training.experiment - INFO - Loaded latest model from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 04:08:06 - config.base - INFO - Configuration loaded from ../output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 04:13:32 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:13:32 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:13:32 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:13:32 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:13:32 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:13:32 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:13:32 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:13:32 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:13:32 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:13:32 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:13:32 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:13:32 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:13:32 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:13:32 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:13:32 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:13:33 - training.trainer - INFO - TensorBoard logging enabled at ../output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:13:33 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:13:33 - training.trainer - INFO - Loaded checkpoint from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:13:33 - training.experiment - INFO - Loaded latest model from ../output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 04:13:33 - config.base - INFO - Configuration loaded from ../output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 04:34:09 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:34:09 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:34:09 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:34:09 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:34:09 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:34:09 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:34:09 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:34:09 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:34:09 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:34:09 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:34:09 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:34:09 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:34:09 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:34:09 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:34:09 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:34:09 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:34:09 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:34:09 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:34:09 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 04:46:07 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:46:07 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:46:07 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:46:07 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:46:07 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:46:07 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:46:07 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:46:07 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:46:07 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:46:07 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:46:07 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:46:07 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:46:07 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:46:07 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:46:07 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:46:07 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:46:07 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:46:07 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:46:07 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 04:47:55 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:47:55 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:47:55 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:47:55 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:47:55 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:47:55 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:47:55 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:47:55 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:47:55 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:47:55 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:47:55 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:47:55 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:47:55 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:47:55 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:47:55 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:47:55 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:47:55 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:47:55 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:47:55 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 04:48:36 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 04:48:36 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 04:48:37 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 04:48:37 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 04:48:37 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 04:48:37 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 04:48:37 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 04:48:37 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 04:48:37 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 04:48:37 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 04:48:37 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 04:48:37 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 04:48:37 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 04:48:37 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 04:48:37 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 04:48:37 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 04:48:37 - training.experiment - INFO - Experiment setup completed
+2025-05-14 04:48:37 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 04:48:37 - training.experiment - INFO - Loaded latest model from output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 05:02:59 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 05:02:59 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 05:02:59 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 05:02:59 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 05:02:59 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 05:02:59 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 05:02:59 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 05:02:59 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 05:02:59 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 05:02:59 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 05:02:59 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 05:02:59 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 05:02:59 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 05:02:59 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 05:03:00 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 05:03:00 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 05:03:00 - training.experiment - INFO - Experiment setup completed
+2025-05-14 05:03:00 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 05:03:00 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 05:03:00 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 05:03:25 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 05:03:25 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 05:03:25 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 05:03:25 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 05:03:25 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 05:03:25 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 05:03:25 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 05:03:25 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 05:03:25 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 05:03:25 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 05:03:25 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 05:03:25 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 05:03:25 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 05:03:25 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 05:03:25 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 05:03:26 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 05:03:26 - training.experiment - INFO - Experiment setup completed
+2025-05-14 05:03:26 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 05:03:26 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 05:03:26 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 05:07:55 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 05:07:55 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 05:07:55 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 05:07:55 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 05:07:55 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 05:07:55 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 05:07:55 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 05:07:55 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 05:07:55 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 05:07:55 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 05:07:55 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 05:07:55 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 05:07:55 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 05:07:55 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 05:07:55 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 05:07:55 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 05:07:55 - training.experiment - INFO - Experiment setup completed
+2025-05-14 05:07:56 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 05:07:56 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 05:07:56 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/no_flow_16_layers/config.json
+2025-05-14 05:11:17 - training.experiment - INFO - Experiment 'baseline_16_layers' initialized with ID: baseline_16_layers
+2025-05-14 05:11:17 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 05:11:17 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 05:11:17 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 05:11:17 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 05:11:17 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 05:11:17 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 05:11:17 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-14 05:11:17 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-14 05:11:17 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-14 05:11:17 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-14 05:11:17 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-14 05:11:17 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-14 05:11:17 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-14 05:11:17 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-14 05:11:18 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/tensorboard
+2025-05-14 05:11:18 - training.experiment - INFO - Experiment setup completed
+2025-05-14 05:11:18 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 05:11:18 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/baseline_16_layers/checkpoints/latest_model.pt
+2025-05-14 05:11:18 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/no_flow_16_layers/config.json

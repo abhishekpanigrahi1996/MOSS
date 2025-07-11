@@ -1,0 +1,145 @@
+{
+  "quick": {
+    "description": "Fast training configuration for quick tests and debugging",
+    "learning_rate": 1e-3,
+    "batch_size": 16,
+    "num_epochs": 5,
+    "num_train_samples": 8192,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 1e-3,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 100
+    },
+    "gradient_clip_val": null,
+    "val_every": 1,
+    "checkpoint_every": 0,
+    "gradient_accumulation_steps": 1,
+    "use_mixed_precision": false,
+    "early_stopping_patience": null,
+    "early_stopping_delta": 0.0,
+    "save_best_model": true,
+    "show_progress_bar": true
+  },
+  "standard": {
+    "description": "Balanced training configuration for general experimentation",
+    "learning_rate": 1e-4,
+    "batch_size": 64,
+    "num_epochs": 30,
+    "num_train_samples": 32768,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 1e-4,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 100
+    },
+    "gradient_clip_val": null,
+    "val_every": 4,
+    "checkpoint_every": 0,
+    "gradient_accumulation_steps": 1,
+    "use_mixed_precision": true,
+    "early_stopping_patience": null,
+    "early_stopping_delta": 0.0,
+    "save_best_model": true,
+    "show_progress_bar": true
+  },
+  "optimized": {
+    "description": "Enhanced training with early stopping and larger dataset for better convergence",
+    "learning_rate": 1e-3,
+    "batch_size": 64,
+    "num_epochs": 50,
+    "num_train_samples": 65536,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 1e-3,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 100
+    },
+    "gradient_clip_val": null,
+    "val_every": 1,
+    "checkpoint_every": 0,
+    "gradient_accumulation_steps": 1,
+    "use_mixed_precision": true,
+    "early_stopping_patience": 10,
+    "early_stopping_delta": 0.001,
+    "save_best_model": true,
+    "show_progress_bar": true
+  },
+  "high_performance": {
+    "learning_rate": 1e-3,
+    "batch_size": 64,
+    "num_epochs": 100,
+    "num_train_samples": 131072,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 1e-3,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 100
+    },
+    "gradient_clip_val": null,
+    "val_every": 1,
+    "checkpoint_every": 0,
+    "gradient_accumulation_steps": 1,
+    "use_mixed_precision": true,
+    "early_stopping_patience": 15,
+    "early_stopping_delta": 0.0005,
+    "save_best_model": true,
+    "show_progress_bar": true
+  }
+}

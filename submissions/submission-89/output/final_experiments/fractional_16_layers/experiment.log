@@ -1,0 +1,324 @@
+2025-05-09 09:34:57 - training.experiment - INFO - Experiment 'fractional_16_layers' initialized with ID: fractional_16_layers
+2025-05-09 09:34:57 - __main__ - INFO - Setting up experiment
+2025-05-09 09:34:57 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-09 09:34:57 - model.transformer - INFO - Using flow distribution mode: fractional
+2025-05-09 09:34:57 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-09 09:34:57 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-09 09:34:57 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-09 09:34:57 - model.transformer - INFO - Flow distribution mode: fractional
+2025-05-09 09:34:57 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-09 09:34:57 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-09 09:34:57 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-09 09:34:57 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-09 09:34:57 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-09 09:34:57 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-09 09:34:57 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-09 09:34:57 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-09 09:34:58 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/fractional_16_layers/tensorboard
+2025-05-09 09:34:58 - training.experiment - INFO - Experiment setup completed
+2025-05-09 09:34:58 - __main__ - INFO - Running experiment
+2025-05-09 09:34:58 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-09 09:37:35 - training.trainer - INFO - Epoch 1/80 - Train Loss: 0.160536, Train Normalized Loss: 1.134215
+2025-05-09 09:37:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:37:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:40:08 - training.trainer - INFO - Epoch 2/80 - Train Loss: 0.131508, Train Normalized Loss: 0.943137
+2025-05-09 09:40:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:40:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:42:38 - training.trainer - INFO - Epoch 3/80 - Train Loss: 0.116205, Train Normalized Loss: 0.852585
+2025-05-09 09:42:38 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:42:38 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:45:12 - training.trainer - INFO - Epoch 4/80 - Train Loss: 0.094743, Train Normalized Loss: 0.727933
+2025-05-09 09:47:40 - training.trainer - INFO - Validation Loss: 0.103313, Validation Normalized Loss: 0.734234
+2025-05-09 09:47:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:47:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:47:40 - training.trainer - INFO - Saved best model with validation loss: 0.103313
+2025-05-09 09:47:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:47:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:50:26 - training.trainer - INFO - Epoch 5/80 - Train Loss: 0.084128, Train Normalized Loss: 0.605998
+2025-05-09 09:50:26 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:50:26 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:53:16 - training.trainer - INFO - Epoch 6/80 - Train Loss: 0.074215, Train Normalized Loss: 0.526922
+2025-05-09 09:53:16 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:53:16 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:56:12 - training.trainer - INFO - Epoch 7/80 - Train Loss: 0.069571, Train Normalized Loss: 0.492110
+2025-05-09 09:56:12 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 09:56:12 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 09:59:12 - training.trainer - INFO - Epoch 8/80 - Train Loss: 0.064048, Train Normalized Loss: 0.425483
+2025-05-09 10:01:41 - training.trainer - INFO - Validation Loss: 0.058801, Validation Normalized Loss: 0.377145
+2025-05-09 10:01:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:01:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:01:41 - training.trainer - INFO - Saved best model with validation loss: 0.058801
+2025-05-09 10:01:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:01:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:04:45 - training.trainer - INFO - Epoch 9/80 - Train Loss: 0.064849, Train Normalized Loss: 0.407927
+2025-05-09 10:04:45 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:04:45 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:07:51 - training.trainer - INFO - Epoch 10/80 - Train Loss: 0.060712, Train Normalized Loss: 0.367424
+2025-05-09 10:07:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:07:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:10:56 - training.trainer - INFO - Epoch 11/80 - Train Loss: 0.056310, Train Normalized Loss: 0.371238
+2025-05-09 10:10:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:10:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:14:02 - training.trainer - INFO - Epoch 12/80 - Train Loss: 0.056592, Train Normalized Loss: 0.366623
+2025-05-09 10:16:32 - training.trainer - INFO - Validation Loss: 0.053902, Validation Normalized Loss: 0.329611
+2025-05-09 10:16:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:16:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:16:32 - training.trainer - INFO - Saved best model with validation loss: 0.053902
+2025-05-09 10:16:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:16:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:19:40 - training.trainer - INFO - Epoch 13/80 - Train Loss: 0.055383, Train Normalized Loss: 0.343324
+2025-05-09 10:19:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:19:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:22:47 - training.trainer - INFO - Epoch 14/80 - Train Loss: 0.054391, Train Normalized Loss: 0.336773
+2025-05-09 10:22:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:22:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:25:56 - training.trainer - INFO - Epoch 15/80 - Train Loss: 0.052700, Train Normalized Loss: 0.330745
+2025-05-09 10:25:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:25:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:29:05 - training.trainer - INFO - Epoch 16/80 - Train Loss: 0.052502, Train Normalized Loss: 0.320667
+2025-05-09 10:31:35 - training.trainer - INFO - Validation Loss: 0.057582, Validation Normalized Loss: 0.326803
+2025-05-09 10:31:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:31:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:34:40 - training.trainer - INFO - Epoch 17/80 - Train Loss: 0.047219, Train Normalized Loss: 0.302271
+2025-05-09 10:34:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:34:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:37:48 - training.trainer - INFO - Epoch 18/80 - Train Loss: 0.051449, Train Normalized Loss: 0.308297
+2025-05-09 10:37:48 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:37:48 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:40:56 - training.trainer - INFO - Epoch 19/80 - Train Loss: 0.049414, Train Normalized Loss: 0.309057
+2025-05-09 10:40:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:40:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:44:04 - training.trainer - INFO - Epoch 20/80 - Train Loss: 0.049523, Train Normalized Loss: 0.305276
+2025-05-09 10:46:35 - training.trainer - INFO - Validation Loss: 0.055221, Validation Normalized Loss: 0.310132
+2025-05-09 10:46:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:46:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:49:45 - training.trainer - INFO - Epoch 21/80 - Train Loss: 0.049925, Train Normalized Loss: 0.304459
+2025-05-09 10:49:45 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:49:45 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:52:55 - training.trainer - INFO - Epoch 22/80 - Train Loss: 0.053574, Train Normalized Loss: 0.311894
+2025-05-09 10:52:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:52:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:56:01 - training.trainer - INFO - Epoch 23/80 - Train Loss: 0.046589, Train Normalized Loss: 0.285065
+2025-05-09 10:56:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 10:56:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 10:59:10 - training.trainer - INFO - Epoch 24/80 - Train Loss: 0.048606, Train Normalized Loss: 0.294451
+2025-05-09 11:01:41 - training.trainer - INFO - Validation Loss: 0.058585, Validation Normalized Loss: 0.321843
+2025-05-09 11:01:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:01:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:04:52 - training.trainer - INFO - Epoch 25/80 - Train Loss: 0.051035, Train Normalized Loss: 0.298224
+2025-05-09 11:04:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:04:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:08:00 - training.trainer - INFO - Epoch 26/80 - Train Loss: 0.047897, Train Normalized Loss: 0.298899
+2025-05-09 11:08:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:08:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:11:08 - training.trainer - INFO - Epoch 27/80 - Train Loss: 0.046166, Train Normalized Loss: 0.288764
+2025-05-09 11:11:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:11:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:14:14 - training.trainer - INFO - Epoch 28/80 - Train Loss: 0.044729, Train Normalized Loss: 0.272926
+2025-05-09 11:16:46 - training.trainer - INFO - Validation Loss: 0.060171, Validation Normalized Loss: 0.329881
+2025-05-09 11:16:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:16:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:19:55 - training.trainer - INFO - Epoch 29/80 - Train Loss: 0.046588, Train Normalized Loss: 0.280251
+2025-05-09 11:19:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:19:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:23:03 - training.trainer - INFO - Epoch 30/80 - Train Loss: 0.042342, Train Normalized Loss: 0.275194
+2025-05-09 11:23:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:23:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:26:14 - training.trainer - INFO - Epoch 31/80 - Train Loss: 0.047713, Train Normalized Loss: 0.282029
+2025-05-09 11:26:14 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:26:14 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:29:24 - training.trainer - INFO - Epoch 32/80 - Train Loss: 0.045428, Train Normalized Loss: 0.270963
+2025-05-09 11:31:55 - training.trainer - INFO - Validation Loss: 0.059976, Validation Normalized Loss: 0.329023
+2025-05-09 11:31:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:31:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:35:05 - training.trainer - INFO - Epoch 33/80 - Train Loss: 0.046551, Train Normalized Loss: 0.284839
+2025-05-09 11:35:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:35:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:38:15 - training.trainer - INFO - Epoch 34/80 - Train Loss: 0.045487, Train Normalized Loss: 0.276213
+2025-05-09 11:38:15 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:38:15 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:41:25 - training.trainer - INFO - Epoch 35/80 - Train Loss: 0.045742, Train Normalized Loss: 0.270650
+2025-05-09 11:41:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:41:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:44:35 - training.trainer - INFO - Epoch 36/80 - Train Loss: 0.042147, Train Normalized Loss: 0.269101
+2025-05-09 11:47:06 - training.trainer - INFO - Validation Loss: 0.063722, Validation Normalized Loss: 0.334711
+2025-05-09 11:47:06 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:47:06 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:50:18 - training.trainer - INFO - Epoch 37/80 - Train Loss: 0.046815, Train Normalized Loss: 0.270988
+2025-05-09 11:50:18 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:50:18 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:53:27 - training.trainer - INFO - Epoch 38/80 - Train Loss: 0.041989, Train Normalized Loss: 0.262981
+2025-05-09 11:53:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:53:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:56:37 - training.trainer - INFO - Epoch 39/80 - Train Loss: 0.044800, Train Normalized Loss: 0.257995
+2025-05-09 11:56:37 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 11:56:37 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 11:59:48 - training.trainer - INFO - Epoch 40/80 - Train Loss: 0.044137, Train Normalized Loss: 0.271502
+2025-05-09 12:02:20 - training.trainer - INFO - Validation Loss: 0.057754, Validation Normalized Loss: 0.310198
+2025-05-09 12:02:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:02:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:05:30 - training.trainer - INFO - Epoch 41/80 - Train Loss: 0.042912, Train Normalized Loss: 0.269068
+2025-05-09 12:05:30 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:05:30 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:08:40 - training.trainer - INFO - Epoch 42/80 - Train Loss: 0.043701, Train Normalized Loss: 0.261717
+2025-05-09 12:08:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:08:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:11:52 - training.trainer - INFO - Epoch 43/80 - Train Loss: 0.043257, Train Normalized Loss: 0.256942
+2025-05-09 12:11:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:11:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:15:04 - training.trainer - INFO - Epoch 44/80 - Train Loss: 0.044695, Train Normalized Loss: 0.257811
+2025-05-09 12:17:34 - training.trainer - INFO - Validation Loss: 0.058524, Validation Normalized Loss: 0.316117
+2025-05-09 12:17:34 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:17:34 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:20:46 - training.trainer - INFO - Epoch 45/80 - Train Loss: 0.043547, Train Normalized Loss: 0.264153
+2025-05-09 12:20:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:20:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:23:59 - training.trainer - INFO - Epoch 46/80 - Train Loss: 0.043875, Train Normalized Loss: 0.264283
+2025-05-09 12:23:59 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:23:59 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:27:11 - training.trainer - INFO - Epoch 47/80 - Train Loss: 0.042269, Train Normalized Loss: 0.261499
+2025-05-09 12:27:11 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:27:11 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:30:25 - training.trainer - INFO - Epoch 48/80 - Train Loss: 0.046160, Train Normalized Loss: 0.262034
+2025-05-09 12:32:55 - training.trainer - INFO - Validation Loss: 0.062986, Validation Normalized Loss: 0.338334
+2025-05-09 12:32:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:32:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:36:05 - training.trainer - INFO - Epoch 49/80 - Train Loss: 0.041933, Train Normalized Loss: 0.248881
+2025-05-09 12:36:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:36:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:39:16 - training.trainer - INFO - Epoch 50/80 - Train Loss: 0.042511, Train Normalized Loss: 0.243884
+2025-05-09 12:39:16 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:39:16 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:42:28 - training.trainer - INFO - Epoch 51/80 - Train Loss: 0.042776, Train Normalized Loss: 0.248612
+2025-05-09 12:42:28 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:42:28 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:45:38 - training.trainer - INFO - Epoch 52/80 - Train Loss: 0.039848, Train Normalized Loss: 0.255591
+2025-05-09 12:48:09 - training.trainer - INFO - Validation Loss: 0.051822, Validation Normalized Loss: 0.284270
+2025-05-09 12:48:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:48:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:48:09 - training.trainer - INFO - Saved best model with validation loss: 0.051822
+2025-05-09 12:48:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:48:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:51:22 - training.trainer - INFO - Epoch 53/80 - Train Loss: 0.041585, Train Normalized Loss: 0.257453
+2025-05-09 12:51:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:51:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:54:33 - training.trainer - INFO - Epoch 54/80 - Train Loss: 0.039738, Train Normalized Loss: 0.243908
+2025-05-09 12:54:33 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:54:33 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 12:57:46 - training.trainer - INFO - Epoch 55/80 - Train Loss: 0.040570, Train Normalized Loss: 0.252568
+2025-05-09 12:57:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 12:57:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:00:58 - training.trainer - INFO - Epoch 56/80 - Train Loss: 0.041722, Train Normalized Loss: 0.248406
+2025-05-09 13:03:28 - training.trainer - INFO - Validation Loss: 0.059121, Validation Normalized Loss: 0.319414
+2025-05-09 13:03:28 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:03:28 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:06:40 - training.trainer - INFO - Epoch 57/80 - Train Loss: 0.040270, Train Normalized Loss: 0.249119
+2025-05-09 13:06:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:06:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:09:54 - training.trainer - INFO - Epoch 58/80 - Train Loss: 0.041999, Train Normalized Loss: 0.243475
+2025-05-09 13:09:54 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:09:54 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:13:10 - training.trainer - INFO - Epoch 59/80 - Train Loss: 0.043880, Train Normalized Loss: 0.254516
+2025-05-09 13:13:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:13:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:16:20 - training.trainer - INFO - Epoch 60/80 - Train Loss: 0.039460, Train Normalized Loss: 0.234233
+2025-05-09 13:18:51 - training.trainer - INFO - Validation Loss: 0.054004, Validation Normalized Loss: 0.294248
+2025-05-09 13:18:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:18:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:22:03 - training.trainer - INFO - Epoch 61/80 - Train Loss: 0.039054, Train Normalized Loss: 0.245291
+2025-05-09 13:22:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:22:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:25:18 - training.trainer - INFO - Epoch 62/80 - Train Loss: 0.042186, Train Normalized Loss: 0.242149
+2025-05-09 13:25:18 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:25:18 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:28:29 - training.trainer - INFO - Epoch 63/80 - Train Loss: 0.038307, Train Normalized Loss: 0.244414
+2025-05-09 13:28:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:28:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:31:44 - training.trainer - INFO - Epoch 64/80 - Train Loss: 0.040824, Train Normalized Loss: 0.251621
+2025-05-09 13:34:15 - training.trainer - INFO - Validation Loss: 0.055078, Validation Normalized Loss: 0.300331
+2025-05-09 13:34:15 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:34:15 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:37:29 - training.trainer - INFO - Epoch 65/80 - Train Loss: 0.043064, Train Normalized Loss: 0.234878
+2025-05-09 13:37:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:37:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:40:42 - training.trainer - INFO - Epoch 66/80 - Train Loss: 0.039223, Train Normalized Loss: 0.244503
+2025-05-09 13:40:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:40:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:43:55 - training.trainer - INFO - Epoch 67/80 - Train Loss: 0.038506, Train Normalized Loss: 0.239809
+2025-05-09 13:43:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:43:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:47:11 - training.trainer - INFO - Epoch 68/80 - Train Loss: 0.041812, Train Normalized Loss: 0.245621
+2025-05-09 13:49:41 - training.trainer - INFO - Validation Loss: 0.054039, Validation Normalized Loss: 0.292713
+2025-05-09 13:49:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:49:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:52:56 - training.trainer - INFO - Epoch 69/80 - Train Loss: 0.040756, Train Normalized Loss: 0.244878
+2025-05-09 13:52:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:52:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:56:12 - training.trainer - INFO - Epoch 70/80 - Train Loss: 0.041994, Train Normalized Loss: 0.251153
+2025-05-09 13:56:12 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:56:12 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 13:59:27 - training.trainer - INFO - Epoch 71/80 - Train Loss: 0.041448, Train Normalized Loss: 0.238545
+2025-05-09 13:59:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 13:59:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:02:44 - training.trainer - INFO - Epoch 72/80 - Train Loss: 0.043359, Train Normalized Loss: 0.246061
+2025-05-09 14:05:15 - training.trainer - INFO - Validation Loss: 0.047822, Validation Normalized Loss: 0.270415
+2025-05-09 14:05:15 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:05:15 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:05:15 - training.trainer - INFO - Saved best model with validation loss: 0.047822
+2025-05-09 14:05:15 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:05:15 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:08:30 - training.trainer - INFO - Epoch 73/80 - Train Loss: 0.040752, Train Normalized Loss: 0.249729
+2025-05-09 14:08:30 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:08:30 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:11:48 - training.trainer - INFO - Epoch 74/80 - Train Loss: 0.045783, Train Normalized Loss: 0.244231
+2025-05-09 14:11:48 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:11:48 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:15:03 - training.trainer - INFO - Epoch 75/80 - Train Loss: 0.040373, Train Normalized Loss: 0.244621
+2025-05-09 14:15:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:15:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:18:21 - training.trainer - INFO - Epoch 76/80 - Train Loss: 0.042689, Train Normalized Loss: 0.252716
+2025-05-09 14:20:51 - training.trainer - INFO - Validation Loss: 0.051345, Validation Normalized Loss: 0.282811
+2025-05-09 14:20:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:20:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:24:06 - training.trainer - INFO - Epoch 77/80 - Train Loss: 0.041102, Train Normalized Loss: 0.233414
+2025-05-09 14:24:06 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:24:06 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:27:22 - training.trainer - INFO - Epoch 78/80 - Train Loss: 0.041283, Train Normalized Loss: 0.242449
+2025-05-09 14:27:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:27:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:30:38 - training.trainer - INFO - Epoch 79/80 - Train Loss: 0.041131, Train Normalized Loss: 0.244929
+2025-05-09 14:30:38 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:30:38 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:33:53 - training.trainer - INFO - Epoch 80/80 - Train Loss: 0.039690, Train Normalized Loss: 0.241341
+2025-05-09 14:36:25 - training.trainer - INFO - Validation Loss: 0.049243, Validation Normalized Loss: 0.272919
+2025-05-09 14:36:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:36:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:36:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/fractional_16_layers/data_state.json
+2025-05-09 14:36:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/fractional_16_layers/val_data_state.json
+2025-05-09 14:36:25 - training.trainer - INFO - Saved final checkpoint
+2025-05-09 14:36:25 - training.experiment - INFO - Training completed in 18086.99 seconds
+2025-05-09 14:36:25 - __main__ - INFO - Experiment fractional_16_layers completed successfully

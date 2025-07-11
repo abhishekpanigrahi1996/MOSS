@@ -1,0 +1,154 @@
+{
+  "tiny": {
+    "description": "Tiny model with minimal parameters for quick tests and debugging",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 32,
+      "num_layers": 4,
+      "num_heads": 1,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "small": {
+    "description": "Small model with balanced parameters for general experiments",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 64,
+      "num_layers": 8,
+      "num_heads": 2,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium": {
+    "description": "Medium-sized model with increased capacity for more complex problems",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 16,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "large": {
+    "description": "Large model with high capacity for challenging problems requiring fine-grained predictions",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 256,
+      "num_layers": 48,
+      "num_heads": 8,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium_cycle": {
+    "description": "Medium model with cycle repetition for improved parameter efficiency",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 2,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "layer_repeat_mode": "cycle",
+      "repeat_factor": 8,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium_layerwise": {
+    "description": "Medium model with layerwise repetition for improved processing depth",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 2,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "layer_repeat_mode": "layerwise",
+      "repeat_factor": 8,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium_one_layer": {
+    "description": "Medium model with a single layer repeated 16 times",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 1,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "layer_repeat_mode": "layerwise",
+      "repeat_factor": 16,
+      "flow_config": {
+        "enabled": false,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium_flow": {
+    "description": "Medium model with flow speed control for adaptive processing",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 16,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "flow_config": {
+        "enabled": true,
+        "predictor_type": "dummy",
+        "per_layer": false
+      }
+    }
+  },
+  "medium_layerwise_flow": {
+    "description": "Medium model with layerwise repetition and per-layer flow control",
+    "input_dim": 2,
+    "transformer": {
+      "hidden_dim": 128,
+      "num_layers": 2,
+      "num_heads": 4,
+      "activation": "gelu",
+      "use_flash_attn": true,
+      "layer_repeat_mode": "layerwise",
+      "repeat_factor": 8,
+      "flow_config": {
+        "enabled": true,
+        "predictor_type": "dummy",
+        "per_layer": true
+      }
+    }
+  }
+}

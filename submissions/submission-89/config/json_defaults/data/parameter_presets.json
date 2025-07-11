@@ -1,0 +1,90 @@
+{
+  "cluster_params": {
+    "few": {
+      "type": "truncated_poisson",
+      "lam": 2.5,
+      "min": 2,
+      "max": 4
+    },
+    "moderate": {
+      "type": "truncated_poisson",
+      "lam": 5.0,
+      "min": 3,
+      "max": 7
+    },
+    "many": {
+      "type": "truncated_poisson",
+      "lam": 8.0,
+      "min": 5,
+      "max": 15
+    }
+  },
+  
+  "snr_db_params": {
+    "easy": {
+      "type": "truncated_normal",
+      "mean": 14.0,
+      "std": 1.5,
+      "min": 12.0,
+      "max": 17.0
+    },
+    "moderate": {
+      "type": "truncated_normal",
+      "mean": 9.0,
+      "std": 1.5,
+      "min": 7.0,
+      "max": 12.0
+    },
+    "difficult": {
+      "type": "truncated_normal",
+      "mean": 5.0,
+      "std": 1.5,
+      "min": 3.0,
+      "max": 7.0
+    }
+  },
+  
+  "sample_count_distribution": {
+    "small": {
+      "type": "truncated_lognormal",
+      "mean": 5.7,
+      "sigma": 0.3,
+      "min": 100,
+      "max": 500
+    },
+    "medium": {
+      "type": "truncated_lognormal",
+      "mean": 6.9,
+      "sigma": 0.3,
+      "min": 500,
+      "max": 1500
+    },
+    "large": {
+      "type": "truncated_lognormal",
+      "mean": 8.0,
+      "sigma": 0.3,
+      "min": 1500,
+      "max": 5000
+    },
+    "fixed_moderate": {
+      "type": "fixed",
+      "value": 1000
+    },
+    "fixed_large": {
+      "type": "fixed",
+      "value": 3000
+    },
+    "variable_moderate": {
+      "type": "uniform",
+      "min": 500,
+      "max": 2000
+    },
+    "variable_large": {
+      "type": "truncated_lognormal",
+      "mean": 8.0,
+      "sigma": 0.3,
+      "min": 2000,
+      "max": 5000
+    }
+  }
+}

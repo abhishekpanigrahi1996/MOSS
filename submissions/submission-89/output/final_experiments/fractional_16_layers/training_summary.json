@@ -1,0 +1,10 @@
+{
+  "experiment_id": "fractional_16_layers",
+  "experiment_name": "fractional_16_layers",
+  "training_time": 18086.987339258194,
+  "epochs_completed": 80,
+  "final_train_loss": 0.03968971775782393,
+  "final_val_loss": 0.04924298018090667,
+  "best_val_loss": 0.04782177817060074,
+  "timestamp": "2025-05-09T14:36:25.093643"
+}

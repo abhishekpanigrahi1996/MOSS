@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "experiment_name": "simple_experiment",
+    "description": "Basic GMM experiment configuration"
+  },
+  "model": "small",
+  "training": "quick",
+  "data": "standard",
+  "validation": "standard"
+}

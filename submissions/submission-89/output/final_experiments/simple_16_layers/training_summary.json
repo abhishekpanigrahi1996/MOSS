@@ -1,0 +1,10 @@
+{
+  "experiment_id": "simple_16_layers",
+  "experiment_name": "simple_16_layers",
+  "training_time": 19198.118778944016,
+  "epochs_completed": 80,
+  "final_train_loss": 0.002026062686354635,
+  "final_val_loss": 0.0018085932111944203,
+  "best_val_loss": 0.0017126337602917374,
+  "timestamp": "2025-05-14T03:28:23.745861"
+}

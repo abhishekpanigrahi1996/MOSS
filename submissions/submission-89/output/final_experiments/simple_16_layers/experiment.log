@@ -1,0 +1,401 @@
+2025-05-13 17:47:52 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-13 17:47:52 - __main__ - INFO - Setting up experiment
+2025-05-13 17:47:52 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-13 17:47:52 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-13 17:47:52 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-13 17:47:52 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-13 17:47:52 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-13 17:47:52 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-13 17:47:52 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-13 17:47:53 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-13 17:47:54 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/simple_16_layers/tensorboard
+2025-05-13 17:47:54 - training.experiment - INFO - Experiment setup completed
+2025-05-13 17:47:54 - __main__ - INFO - Running experiment
+2025-05-13 17:47:54 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-13 17:54:23 - training.trainer - INFO - Epoch 1/80 - Train Loss: 0.084154, Train Normalized Loss: 2.661196
+2025-05-13 17:54:23 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 17:54:23 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 18:01:41 - training.trainer - INFO - Epoch 2/80 - Train Loss: 0.039149, Train Normalized Loss: 1.238007
+2025-05-13 18:01:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 18:01:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 18:09:03 - training.trainer - INFO - Epoch 3/80 - Train Loss: 0.026544, Train Normalized Loss: 0.839407
+2025-05-13 18:09:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 18:09:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 20:42:19 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-13 20:42:19 - __main__ - INFO - Setting up experiment
+2025-05-13 20:42:19 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-13 20:42:19 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-13 20:42:19 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-13 20:42:19 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-13 20:42:19 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-13 20:42:19 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-13 20:42:19 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-13 20:42:19 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-13 20:42:20 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/simple_16_layers/tensorboard
+2025-05-13 20:42:20 - training.experiment - INFO - Experiment setup completed
+2025-05-13 20:42:20 - __main__ - INFO - Running experiment
+2025-05-13 20:42:20 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-13 20:44:17 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-13 20:44:17 - __main__ - INFO - Setting up experiment
+2025-05-13 20:44:17 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-13 20:44:17 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-13 20:44:17 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-13 20:44:17 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-13 20:44:17 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-13 20:44:17 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-13 20:44:17 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-13 20:44:17 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-13 20:44:18 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/simple_16_layers/tensorboard
+2025-05-13 20:44:18 - training.experiment - INFO - Experiment setup completed
+2025-05-13 20:44:18 - __main__ - INFO - Running experiment
+2025-05-13 20:44:18 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-13 20:48:11 - training.trainer - INFO - Epoch 1/80 - Train Loss: 0.084154, Train Normalized Loss: 2.661196
+2025-05-13 20:48:11 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 20:48:11 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 20:52:03 - training.trainer - INFO - Epoch 2/80 - Train Loss: 0.039149, Train Normalized Loss: 1.238007
+2025-05-13 20:52:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 20:52:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 20:55:56 - training.trainer - INFO - Epoch 3/80 - Train Loss: 0.026544, Train Normalized Loss: 0.839408
+2025-05-13 20:55:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 20:55:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 20:59:47 - training.trainer - INFO - Epoch 4/80 - Train Loss: 0.014771, Train Normalized Loss: 0.467101
+2025-05-13 21:02:01 - training.trainer - INFO - Validation Loss: 0.012401, Validation Normalized Loss: 0.392151
+2025-05-13 21:02:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:02:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:02:01 - training.trainer - INFO - Saved best model with validation loss: 0.012401
+2025-05-13 21:02:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:02:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:05:59 - training.trainer - INFO - Epoch 5/80 - Train Loss: 0.010072, Train Normalized Loss: 0.318489
+2025-05-13 21:05:59 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:05:59 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:09:52 - training.trainer - INFO - Epoch 6/80 - Train Loss: 0.007596, Train Normalized Loss: 0.240220
+2025-05-13 21:09:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:09:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:13:47 - training.trainer - INFO - Epoch 7/80 - Train Loss: 0.006644, Train Normalized Loss: 0.210093
+2025-05-13 21:13:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:13:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:17:38 - training.trainer - INFO - Epoch 8/80 - Train Loss: 0.005539, Train Normalized Loss: 0.175156
+2025-05-13 21:19:51 - training.trainer - INFO - Validation Loss: 0.006384, Validation Normalized Loss: 0.201893
+2025-05-13 21:19:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:19:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:19:51 - training.trainer - INFO - Saved best model with validation loss: 0.006384
+2025-05-13 21:19:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:19:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:23:42 - training.trainer - INFO - Epoch 9/80 - Train Loss: 0.005174, Train Normalized Loss: 0.163617
+2025-05-13 21:23:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:23:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:27:36 - training.trainer - INFO - Epoch 10/80 - Train Loss: 0.004741, Train Normalized Loss: 0.149927
+2025-05-13 21:27:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:27:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:31:52 - training.trainer - INFO - Epoch 11/80 - Train Loss: 0.004471, Train Normalized Loss: 0.141399
+2025-05-13 21:31:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:31:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:36:56 - training.trainer - INFO - Epoch 12/80 - Train Loss: 0.004117, Train Normalized Loss: 0.130188
+2025-05-13 21:40:26 - training.trainer - INFO - Validation Loss: 0.004718, Validation Normalized Loss: 0.149196
+2025-05-13 21:40:26 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:40:26 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:40:26 - training.trainer - INFO - Saved best model with validation loss: 0.004718
+2025-05-13 21:40:26 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:40:26 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:45:59 - training.trainer - INFO - Epoch 13/80 - Train Loss: 0.004160, Train Normalized Loss: 0.131552
+2025-05-13 21:45:59 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:45:59 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 21:51:04 - training.trainer - INFO - Epoch 14/80 - Train Loss: 0.003701, Train Normalized Loss: 0.117023
+2025-05-13 21:51:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 21:51:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:08:24 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-13 22:08:24 - __main__ - INFO - Setting device to cuda:0 for resumed experiment
+2025-05-13 22:08:24 - training.experiment - INFO - Resumed training data loader from output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:08:24 - training.experiment - INFO - Resumed validation data loader from output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:08:24 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-13 22:08:24 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-13 22:08:24 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-13 22:08:24 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-13 22:08:24 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-13 22:08:24 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-13 22:08:24 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-13 22:08:25 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/simple_16_layers/tensorboard
+2025-05-13 22:08:25 - training.experiment - INFO - Experiment setup completed
+2025-05-13 22:08:25 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/simple_16_layers/checkpoints/latest_model.pt (epoch 14)
+2025-05-13 22:08:25 - training.experiment - INFO - Will continue training for remaining 66 epochs
+2025-05-13 22:08:25 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/simple_16_layers/checkpoints/latest_model.pt (epoch 14)
+2025-05-13 22:08:25 - training.trainer - INFO - Starting training for 66 epochs (from epoch 15 to 80)
+2025-05-13 22:12:21 - training.trainer - INFO - Epoch 15/80 - Train Loss: 0.003538, Train Normalized Loss: 0.111896
+2025-05-13 22:12:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:12:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:16:37 - training.trainer - INFO - Epoch 16/80 - Train Loss: 0.003523, Train Normalized Loss: 0.111396
+2025-05-13 22:19:04 - training.trainer - INFO - Validation Loss: 0.003832, Validation Normalized Loss: 0.121163
+2025-05-13 22:19:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:19:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:19:04 - training.trainer - INFO - Saved best model with validation loss: 0.003832
+2025-05-13 22:19:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:19:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:22:59 - training.trainer - INFO - Epoch 17/80 - Train Loss: 0.003468, Train Normalized Loss: 0.109662
+2025-05-13 22:23:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:23:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:27:11 - training.trainer - INFO - Epoch 18/80 - Train Loss: 0.003228, Train Normalized Loss: 0.102067
+2025-05-13 22:27:11 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:27:11 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:31:08 - training.trainer - INFO - Epoch 19/80 - Train Loss: 0.003192, Train Normalized Loss: 0.100947
+2025-05-13 22:31:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:31:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:35:04 - training.trainer - INFO - Epoch 20/80 - Train Loss: 0.003098, Train Normalized Loss: 0.097983
+2025-05-13 22:37:32 - training.trainer - INFO - Validation Loss: 0.003355, Validation Normalized Loss: 0.106099
+2025-05-13 22:37:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:37:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:37:32 - training.trainer - INFO - Saved best model with validation loss: 0.003355
+2025-05-13 22:37:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:37:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:42:19 - training.trainer - INFO - Epoch 21/80 - Train Loss: 0.002934, Train Normalized Loss: 0.092772
+2025-05-13 22:42:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:42:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:46:41 - training.trainer - INFO - Epoch 22/80 - Train Loss: 0.003000, Train Normalized Loss: 0.094859
+2025-05-13 22:46:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:46:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:51:51 - training.trainer - INFO - Epoch 23/80 - Train Loss: 0.002900, Train Normalized Loss: 0.091694
+2025-05-13 22:51:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:51:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:56:05 - training.trainer - INFO - Epoch 24/80 - Train Loss: 0.002896, Train Normalized Loss: 0.091578
+2025-05-13 22:58:19 - training.trainer - INFO - Validation Loss: 0.002832, Validation Normalized Loss: 0.089570
+2025-05-13 22:58:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:58:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 22:58:19 - training.trainer - INFO - Saved best model with validation loss: 0.002832
+2025-05-13 22:58:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 22:58:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:02:13 - training.trainer - INFO - Epoch 25/80 - Train Loss: 0.002769, Train Normalized Loss: 0.087567
+2025-05-13 23:02:13 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:02:13 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:06:26 - training.trainer - INFO - Epoch 26/80 - Train Loss: 0.002822, Train Normalized Loss: 0.089249
+2025-05-13 23:06:26 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:06:26 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:10:38 - training.trainer - INFO - Epoch 27/80 - Train Loss: 0.002880, Train Normalized Loss: 0.091084
+2025-05-13 23:10:38 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:10:38 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:15:32 - training.trainer - INFO - Epoch 28/80 - Train Loss: 0.002726, Train Normalized Loss: 0.086195
+2025-05-13 23:17:42 - training.trainer - INFO - Validation Loss: 0.002459, Validation Normalized Loss: 0.077765
+2025-05-13 23:17:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:17:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:17:42 - training.trainer - INFO - Saved best model with validation loss: 0.002459
+2025-05-13 23:17:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:17:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:21:43 - training.trainer - INFO - Epoch 29/80 - Train Loss: 0.002646, Train Normalized Loss: 0.083685
+2025-05-13 23:21:43 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:21:43 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:25:51 - training.trainer - INFO - Epoch 30/80 - Train Loss: 0.002563, Train Normalized Loss: 0.081043
+2025-05-13 23:25:51 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:25:51 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:29:43 - training.trainer - INFO - Epoch 31/80 - Train Loss: 0.002622, Train Normalized Loss: 0.082922
+2025-05-13 23:29:43 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:29:43 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:33:41 - training.trainer - INFO - Epoch 32/80 - Train Loss: 0.002652, Train Normalized Loss: 0.083861
+2025-05-13 23:35:55 - training.trainer - INFO - Validation Loss: 0.002380, Validation Normalized Loss: 0.075256
+2025-05-13 23:35:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:35:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:35:55 - training.trainer - INFO - Saved best model with validation loss: 0.002380
+2025-05-13 23:35:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:35:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:39:52 - training.trainer - INFO - Epoch 33/80 - Train Loss: 0.002529, Train Normalized Loss: 0.079983
+2025-05-13 23:39:52 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:39:52 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:44:19 - training.trainer - INFO - Epoch 34/80 - Train Loss: 0.003489, Train Normalized Loss: 0.110328
+2025-05-13 23:44:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:44:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:48:56 - training.trainer - INFO - Epoch 35/80 - Train Loss: 0.002800, Train Normalized Loss: 0.088542
+2025-05-13 23:48:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:48:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:52:53 - training.trainer - INFO - Epoch 36/80 - Train Loss: 0.002546, Train Normalized Loss: 0.080509
+2025-05-13 23:55:04 - training.trainer - INFO - Validation Loss: 0.002132, Validation Normalized Loss: 0.067421
+2025-05-13 23:55:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:55:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:55:04 - training.trainer - INFO - Saved best model with validation loss: 0.002132
+2025-05-13 23:55:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:55:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-13 23:58:58 - training.trainer - INFO - Epoch 37/80 - Train Loss: 0.002811, Train Normalized Loss: 0.088877
+2025-05-13 23:58:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-13 23:58:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:02:48 - training.trainer - INFO - Epoch 38/80 - Train Loss: 0.002575, Train Normalized Loss: 0.081435
+2025-05-14 00:02:48 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:02:48 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:06:42 - training.trainer - INFO - Epoch 39/80 - Train Loss: 0.002439, Train Normalized Loss: 0.077114
+2025-05-14 00:06:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:06:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:10:29 - training.trainer - INFO - Epoch 40/80 - Train Loss: 0.002292, Train Normalized Loss: 0.072474
+2025-05-14 00:12:44 - training.trainer - INFO - Validation Loss: 0.002391, Validation Normalized Loss: 0.075618
+2025-05-14 00:12:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:12:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:16:40 - training.trainer - INFO - Epoch 41/80 - Train Loss: 0.002402, Train Normalized Loss: 0.075944
+2025-05-14 00:16:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:16:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:20:29 - training.trainer - INFO - Epoch 42/80 - Train Loss: 0.002394, Train Normalized Loss: 0.075704
+2025-05-14 00:20:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:20:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:24:21 - training.trainer - INFO - Epoch 43/80 - Train Loss: 0.002406, Train Normalized Loss: 0.076086
+2025-05-14 00:24:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:24:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:28:15 - training.trainer - INFO - Epoch 44/80 - Train Loss: 0.002238, Train Normalized Loss: 0.070779
+2025-05-14 00:30:27 - training.trainer - INFO - Validation Loss: 0.002031, Validation Normalized Loss: 0.064241
+2025-05-14 00:30:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:30:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:30:27 - training.trainer - INFO - Saved best model with validation loss: 0.002031
+2025-05-14 00:30:27 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:30:27 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:34:22 - training.trainer - INFO - Epoch 45/80 - Train Loss: 0.002303, Train Normalized Loss: 0.072817
+2025-05-14 00:34:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:34:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:38:16 - training.trainer - INFO - Epoch 46/80 - Train Loss: 0.002309, Train Normalized Loss: 0.073026
+2025-05-14 00:38:16 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:38:16 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:42:10 - training.trainer - INFO - Epoch 47/80 - Train Loss: 0.002408, Train Normalized Loss: 0.076133
+2025-05-14 00:42:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:42:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:46:00 - training.trainer - INFO - Epoch 48/80 - Train Loss: 0.002153, Train Normalized Loss: 0.068090
+2025-05-14 00:48:12 - training.trainer - INFO - Validation Loss: 0.002086, Validation Normalized Loss: 0.065965
+2025-05-14 00:48:12 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:48:12 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:52:05 - training.trainer - INFO - Epoch 49/80 - Train Loss: 0.002290, Train Normalized Loss: 0.072408
+2025-05-14 00:52:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:52:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:56:00 - training.trainer - INFO - Epoch 50/80 - Train Loss: 0.002179, Train Normalized Loss: 0.068891
+2025-05-14 00:56:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:56:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 00:59:55 - training.trainer - INFO - Epoch 51/80 - Train Loss: 0.002185, Train Normalized Loss: 0.069105
+2025-05-14 00:59:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 00:59:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:03:46 - training.trainer - INFO - Epoch 52/80 - Train Loss: 0.002403, Train Normalized Loss: 0.075996
+2025-05-14 01:05:58 - training.trainer - INFO - Validation Loss: 0.002111, Validation Normalized Loss: 0.066758
+2025-05-14 01:05:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:05:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:09:50 - training.trainer - INFO - Epoch 53/80 - Train Loss: 0.002188, Train Normalized Loss: 0.069197
+2025-05-14 01:09:50 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:09:50 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:13:44 - training.trainer - INFO - Epoch 54/80 - Train Loss: 0.002071, Train Normalized Loss: 0.065478
+2025-05-14 01:13:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:13:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:17:34 - training.trainer - INFO - Epoch 55/80 - Train Loss: 0.002184, Train Normalized Loss: 0.069075
+2025-05-14 01:17:34 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:17:34 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:21:26 - training.trainer - INFO - Epoch 56/80 - Train Loss: 0.002114, Train Normalized Loss: 0.066851
+2025-05-14 01:23:47 - training.trainer - INFO - Validation Loss: 0.002361, Validation Normalized Loss: 0.074673
+2025-05-14 01:23:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:23:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:28:28 - training.trainer - INFO - Epoch 57/80 - Train Loss: 0.002167, Train Normalized Loss: 0.068532
+2025-05-14 01:28:28 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:28:28 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:32:43 - training.trainer - INFO - Epoch 58/80 - Train Loss: 0.002148, Train Normalized Loss: 0.067922
+2025-05-14 01:32:43 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:32:43 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:37:10 - training.trainer - INFO - Epoch 59/80 - Train Loss: 0.002063, Train Normalized Loss: 0.065238
+2025-05-14 01:37:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:37:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:41:30 - training.trainer - INFO - Epoch 60/80 - Train Loss: 0.002096, Train Normalized Loss: 0.066279
+2025-05-14 01:43:42 - training.trainer - INFO - Validation Loss: 0.002037, Validation Normalized Loss: 0.064431
+2025-05-14 01:43:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:43:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:47:41 - training.trainer - INFO - Epoch 61/80 - Train Loss: 0.002051, Train Normalized Loss: 0.064853
+2025-05-14 01:47:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:47:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:52:06 - training.trainer - INFO - Epoch 62/80 - Train Loss: 0.002102, Train Normalized Loss: 0.066483
+2025-05-14 01:52:06 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:52:06 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 01:56:25 - training.trainer - INFO - Epoch 63/80 - Train Loss: 0.002094, Train Normalized Loss: 0.066211
+2025-05-14 01:56:25 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 01:56:25 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:00:28 - training.trainer - INFO - Epoch 64/80 - Train Loss: 0.002150, Train Normalized Loss: 0.067993
+2025-05-14 02:02:40 - training.trainer - INFO - Validation Loss: 0.001878, Validation Normalized Loss: 0.059386
+2025-05-14 02:02:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:02:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:02:40 - training.trainer - INFO - Saved best model with validation loss: 0.001878
+2025-05-14 02:02:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:02:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:06:32 - training.trainer - INFO - Epoch 65/80 - Train Loss: 0.002085, Train Normalized Loss: 0.065921
+2025-05-14 02:06:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:06:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:10:22 - training.trainer - INFO - Epoch 66/80 - Train Loss: 0.002113, Train Normalized Loss: 0.066806
+2025-05-14 02:10:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:10:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:14:17 - training.trainer - INFO - Epoch 67/80 - Train Loss: 0.002060, Train Normalized Loss: 0.065151
+2025-05-14 02:14:17 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:14:17 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:18:09 - training.trainer - INFO - Epoch 68/80 - Train Loss: 0.002028, Train Normalized Loss: 0.064129
+2025-05-14 02:20:23 - training.trainer - INFO - Validation Loss: 0.001713, Validation Normalized Loss: 0.054158
+2025-05-14 02:20:23 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:20:23 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:20:23 - training.trainer - INFO - Saved best model with validation loss: 0.001713
+2025-05-14 02:20:23 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:20:23 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:24:19 - training.trainer - INFO - Epoch 69/80 - Train Loss: 0.002011, Train Normalized Loss: 0.063605
+2025-05-14 02:24:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:24:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:28:10 - training.trainer - INFO - Epoch 70/80 - Train Loss: 0.002044, Train Normalized Loss: 0.064624
+2025-05-14 02:28:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:28:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:32:29 - training.trainer - INFO - Epoch 71/80 - Train Loss: 0.001933, Train Normalized Loss: 0.061120
+2025-05-14 02:32:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:32:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:37:42 - training.trainer - INFO - Epoch 72/80 - Train Loss: 0.002116, Train Normalized Loss: 0.066903
+2025-05-14 02:40:48 - training.trainer - INFO - Validation Loss: 0.001904, Validation Normalized Loss: 0.060201
+2025-05-14 02:40:48 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:40:48 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:45:58 - training.trainer - INFO - Epoch 73/80 - Train Loss: 0.001994, Train Normalized Loss: 0.063058
+2025-05-14 02:45:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:45:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:51:00 - training.trainer - INFO - Epoch 74/80 - Train Loss: 0.001939, Train Normalized Loss: 0.061327
+2025-05-14 02:51:00 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:51:00 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 02:56:03 - training.trainer - INFO - Epoch 75/80 - Train Loss: 0.002003, Train Normalized Loss: 0.063334
+2025-05-14 02:56:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 02:56:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:01:10 - training.trainer - INFO - Epoch 76/80 - Train Loss: 0.001968, Train Normalized Loss: 0.062231
+2025-05-14 03:04:20 - training.trainer - INFO - Validation Loss: 0.001805, Validation Normalized Loss: 0.057079
+2025-05-14 03:04:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:04:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:09:42 - training.trainer - INFO - Epoch 77/80 - Train Loss: 0.002007, Train Normalized Loss: 0.063472
+2025-05-14 03:09:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:09:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:14:44 - training.trainer - INFO - Epoch 78/80 - Train Loss: 0.002038, Train Normalized Loss: 0.064449
+2025-05-14 03:14:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:14:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:20:01 - training.trainer - INFO - Epoch 79/80 - Train Loss: 0.002015, Train Normalized Loss: 0.063719
+2025-05-14 03:20:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:20:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:25:09 - training.trainer - INFO - Epoch 80/80 - Train Loss: 0.002026, Train Normalized Loss: 0.064070
+2025-05-14 03:28:23 - training.trainer - INFO - Validation Loss: 0.001809, Validation Normalized Loss: 0.057193
+2025-05-14 03:28:23 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:28:23 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:28:23 - training.trainer - INFO - Saved training data loader state to output/final_experiments/simple_16_layers/data_state.json
+2025-05-14 03:28:23 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/simple_16_layers/val_data_state.json
+2025-05-14 03:28:23 - training.trainer - INFO - Saved final checkpoint
+2025-05-14 03:28:23 - training.experiment - INFO - Training completed in 19198.12 seconds
+2025-05-14 03:28:23 - __main__ - INFO - Resumed experiment simple_16_layers completed successfully
+2025-05-14 15:39:22 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-14 15:39:22 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-14 15:39:22 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-14 15:39:22 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-14 15:39:22 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-14 15:39:22 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-14 15:39:22 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-14 15:39:22 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-14 15:39:22 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-14 15:39:24 - training.trainer - INFO - TensorBoard logging enabled at /mount/Storage/gmm-v2/output/final_experiments/simple_16_layers/tensorboard
+2025-05-14 15:39:24 - training.experiment - INFO - Experiment setup completed
+2025-05-14 15:39:24 - training.trainer - INFO - Loaded checkpoint from /mount/Storage/gmm-v2/output/final_experiments/simple_16_layers/checkpoints/latest_model.pt (epoch 80)
+2025-05-14 15:39:24 - training.experiment - INFO - Loaded latest model from /mount/Storage/gmm-v2/output/final_experiments/simple_16_layers/checkpoints/latest_model.pt
+2025-05-14 15:39:24 - config.base - INFO - Configuration loaded from /mount/Storage/gmm-v2/output/final_experiments/hard_16_layers/config.json
+2025-05-14 15:47:12 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-14 15:47:12 - training.experiment - INFO - Override device in setup: cuda
+2025-05-15 02:34:02 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-15 02:34:02 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-15 02:34:02 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-15 02:34:02 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-15 02:34:02 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-15 02:34:02 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-15 02:34:02 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-15 02:34:02 - model.factory - INFO - Created cluster prediction model with 197,504 parameters
+2025-05-15 02:34:53 - training.experiment - INFO - Experiment 'simple_16_layers' initialized with ID: simple_16_layers
+2025-05-15 02:34:53 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-15 02:34:53 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-15 02:34:53 - model.transformer - INFO - Using layerwise repetition mode with 16 effective layers
+2025-05-15 02:34:53 - model.transformer - INFO - Unique layers: 1, repeat factor: 16
+2025-05-15 02:34:53 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-15 02:34:53 - model.transformer - INFO - GMMTransformer created with 196,992 parameters
+2025-05-15 02:34:53 - model.factory - INFO - Created cluster prediction model with 197,504 parameters

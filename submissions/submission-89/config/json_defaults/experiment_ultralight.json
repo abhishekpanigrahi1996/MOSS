@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "experiment_name": "ultralight_experiment",
+    "description": "Minimal GMM experiment for testing with very low memory usage"
+  },
+  "model": "tiny",
+  "training": {
+    "description": "Ultra-quick training for minimal testing",
+    "learning_rate": 1e-3,
+    "batch_size": 8,
+    "num_epochs": 2,
+    "num_train_samples": 128,
+    "optimizer": {
+      "optimizer": "adamw",
+      "learning_rate": 1e-3,
+      "weight_decay": 0.01,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "exclude_bias_and_norm": true
+    },
+    "scheduler": {
+      "scheduler_type": "cosine",
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1
+    },
+    "loss": {
+      "loss_type": "wasserstein",
+      "wasserstein_algorithm": "exact",
+      "wasserstein_backend": "pot",
+      "wasserstein_epsilon": 0.01,
+      "wasserstein_max_iter": 50
+    },
+    "gradient_clip_val": null,
+    "val_every": 1,
+    "checkpoint_every": 0,
+    "gradient_accumulation_steps": 1,
+    "use_mixed_precision": false,
+    "early_stopping_patience": null,
+    "early_stopping_delta": 0.0,
+    "save_best_model": true,
+    "show_progress_bar": true
+  },
+  "data": {
+    "dim": 2,
+    "cluster_params": {
+      "type": "fixed",
+      "value": 3
+    },
+    "snr_db_params": {
+      "type": "fixed",
+      "value": 12.0
+    },
+    "sample_count_distribution": {
+      "type": "fixed",
+      "value": 200
+    },
+    "vary_clusters_in_batch": false,
+    "vary_snr_in_batch": false,
+    "uniform_sample_count": true,
+    "random_seed": 42
+  },
+  "validation": {
+    "validation_batch_size": 8,
+    "num_val_batches": 2,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse"],
+      "compare_with_kmeans": false,
+      "compute_detailed_metrics": false
+    },
+    "visualize": {
+      "enabled": false
+    }
+  }
+}

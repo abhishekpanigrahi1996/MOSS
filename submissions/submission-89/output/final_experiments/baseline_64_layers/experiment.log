@@ -1,0 +1,383 @@
+2025-05-09 15:34:37 - training.experiment - INFO - Experiment 'baseline_64_layers' initialized with ID: baseline_64_layers
+2025-05-09 15:34:37 - __main__ - INFO - Setting up experiment
+2025-05-09 15:34:37 - training.experiment - INFO - Created data loaders with batch sizes: train=64, val=64
+2025-05-09 15:34:37 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-09 15:34:37 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-09 15:34:37 - model.transformer - INFO - Using layerwise repetition mode with 64 effective layers
+2025-05-09 15:34:37 - model.transformer - INFO - Unique layers: 1, repeat factor: 64
+2025-05-09 15:34:37 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-09 15:34:37 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-09 15:34:37 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-09 15:34:37 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-09 15:34:37 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-09 15:34:37 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-09 15:34:37 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-09 15:34:37 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-09 15:34:37 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-09 15:34:38 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_64_layers/tensorboard
+2025-05-09 15:34:38 - training.experiment - INFO - Experiment setup completed
+2025-05-09 15:34:38 - __main__ - INFO - Running experiment
+2025-05-09 15:34:38 - training.trainer - INFO - Starting training for 80 epochs (from epoch 1 to 80)
+2025-05-09 15:46:20 - training.trainer - INFO - Epoch 1/80 - Train Loss: 0.200100, Train Normalized Loss: 1.567263
+2025-05-09 15:46:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 15:46:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 15:57:57 - training.trainer - INFO - Epoch 2/80 - Train Loss: 0.139713, Train Normalized Loss: 0.992135
+2025-05-09 15:57:57 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 15:57:57 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 16:09:35 - training.trainer - INFO - Epoch 3/80 - Train Loss: 0.133821, Train Normalized Loss: 0.948190
+2025-05-09 16:09:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 16:09:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 16:21:12 - training.trainer - INFO - Epoch 4/80 - Train Loss: 0.113491, Train Normalized Loss: 0.857684
+2025-05-09 16:25:53 - training.trainer - INFO - Validation Loss: 0.109954, Validation Normalized Loss: 0.789939
+2025-05-09 16:25:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 16:25:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 16:25:53 - training.trainer - INFO - Saved best model with validation loss: 0.109954
+2025-05-09 16:25:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 16:25:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 16:37:30 - training.trainer - INFO - Epoch 5/80 - Train Loss: 0.093655, Train Normalized Loss: 0.672589
+2025-05-09 16:37:30 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 16:37:30 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 16:49:05 - training.trainer - INFO - Epoch 6/80 - Train Loss: 0.076473, Train Normalized Loss: 0.533034
+2025-05-09 16:49:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 16:49:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:00:41 - training.trainer - INFO - Epoch 7/80 - Train Loss: 0.068578, Train Normalized Loss: 0.471584
+2025-05-09 17:00:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:00:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:12:16 - training.trainer - INFO - Epoch 8/80 - Train Loss: 0.062842, Train Normalized Loss: 0.402862
+2025-05-09 17:16:54 - training.trainer - INFO - Validation Loss: 0.059840, Validation Normalized Loss: 0.384567
+2025-05-09 17:16:54 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:16:54 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:16:54 - training.trainer - INFO - Saved best model with validation loss: 0.059840
+2025-05-09 17:16:54 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:16:54 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:28:29 - training.trainer - INFO - Epoch 9/80 - Train Loss: 0.058976, Train Normalized Loss: 0.356992
+2025-05-09 17:28:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:28:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:40:04 - training.trainer - INFO - Epoch 10/80 - Train Loss: 0.054639, Train Normalized Loss: 0.319427
+2025-05-09 17:40:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:40:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 17:51:40 - training.trainer - INFO - Epoch 11/80 - Train Loss: 0.049999, Train Normalized Loss: 0.317093
+2025-05-09 17:51:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 17:51:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:03:15 - training.trainer - INFO - Epoch 12/80 - Train Loss: 0.048742, Train Normalized Loss: 0.299761
+2025-05-09 18:07:53 - training.trainer - INFO - Validation Loss: 0.045665, Validation Normalized Loss: 0.267087
+2025-05-09 18:07:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:07:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:07:53 - training.trainer - INFO - Saved best model with validation loss: 0.045665
+2025-05-09 18:07:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:07:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:19:29 - training.trainer - INFO - Epoch 13/80 - Train Loss: 0.048414, Train Normalized Loss: 0.284635
+2025-05-09 18:19:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:19:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:31:05 - training.trainer - INFO - Epoch 14/80 - Train Loss: 0.046804, Train Normalized Loss: 0.275089
+2025-05-09 18:31:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:31:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:42:41 - training.trainer - INFO - Epoch 15/80 - Train Loss: 0.045452, Train Normalized Loss: 0.270808
+2025-05-09 18:42:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:42:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:54:17 - training.trainer - INFO - Epoch 16/80 - Train Loss: 0.045788, Train Normalized Loss: 0.265018
+2025-05-09 18:58:55 - training.trainer - INFO - Validation Loss: 0.045017, Validation Normalized Loss: 0.255908
+2025-05-09 18:58:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:58:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 18:58:55 - training.trainer - INFO - Saved best model with validation loss: 0.045017
+2025-05-09 18:58:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 18:58:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 19:10:28 - training.trainer - INFO - Epoch 17/80 - Train Loss: 0.040576, Train Normalized Loss: 0.247306
+2025-05-09 19:10:28 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 19:10:28 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 19:22:04 - training.trainer - INFO - Epoch 18/80 - Train Loss: 0.044376, Train Normalized Loss: 0.253103
+2025-05-09 19:22:04 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 19:22:04 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 19:33:39 - training.trainer - INFO - Epoch 19/80 - Train Loss: 0.043658, Train Normalized Loss: 0.259361
+2025-05-09 19:33:39 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 19:33:39 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 19:45:14 - training.trainer - INFO - Epoch 20/80 - Train Loss: 0.041815, Train Normalized Loss: 0.246564
+2025-05-09 19:49:53 - training.trainer - INFO - Validation Loss: 0.043556, Validation Normalized Loss: 0.248601
+2025-05-09 19:49:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 19:49:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 19:49:53 - training.trainer - INFO - Saved best model with validation loss: 0.043556
+2025-05-09 19:49:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 19:49:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:01:30 - training.trainer - INFO - Epoch 21/80 - Train Loss: 0.043136, Train Normalized Loss: 0.252799
+2025-05-09 20:01:30 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:01:30 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:13:07 - training.trainer - INFO - Epoch 22/80 - Train Loss: 0.046513, Train Normalized Loss: 0.259951
+2025-05-09 20:13:07 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:13:07 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:24:40 - training.trainer - INFO - Epoch 23/80 - Train Loss: 0.041617, Train Normalized Loss: 0.246538
+2025-05-09 20:24:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:24:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:36:17 - training.trainer - INFO - Epoch 24/80 - Train Loss: 0.042456, Train Normalized Loss: 0.245997
+2025-05-09 20:40:56 - training.trainer - INFO - Validation Loss: 0.042268, Validation Normalized Loss: 0.238951
+2025-05-09 20:40:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:40:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:40:56 - training.trainer - INFO - Saved best model with validation loss: 0.042268
+2025-05-09 20:40:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:40:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 20:52:33 - training.trainer - INFO - Epoch 25/80 - Train Loss: 0.044948, Train Normalized Loss: 0.250798
+2025-05-09 20:52:33 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 20:52:33 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 21:04:09 - training.trainer - INFO - Epoch 26/80 - Train Loss: 0.041818, Train Normalized Loss: 0.248830
+2025-05-09 21:04:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 21:04:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 21:15:44 - training.trainer - INFO - Epoch 27/80 - Train Loss: 0.040163, Train Normalized Loss: 0.241679
+2025-05-09 21:15:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 21:15:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 21:27:18 - training.trainer - INFO - Epoch 28/80 - Train Loss: 0.039599, Train Normalized Loss: 0.232304
+2025-05-09 21:31:56 - training.trainer - INFO - Validation Loss: 0.042559, Validation Normalized Loss: 0.239209
+2025-05-09 21:31:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 21:31:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 21:43:31 - training.trainer - INFO - Epoch 29/80 - Train Loss: 0.040887, Train Normalized Loss: 0.236187
+2025-05-09 21:43:31 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 21:43:31 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 21:55:05 - training.trainer - INFO - Epoch 30/80 - Train Loss: 0.037008, Train Normalized Loss: 0.230971
+2025-05-09 21:55:05 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 21:55:05 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 22:06:41 - training.trainer - INFO - Epoch 31/80 - Train Loss: 0.042434, Train Normalized Loss: 0.244681
+2025-05-09 22:06:41 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 22:06:41 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 22:18:17 - training.trainer - INFO - Epoch 32/80 - Train Loss: 0.040100, Train Normalized Loss: 0.230305
+2025-05-09 22:22:55 - training.trainer - INFO - Validation Loss: 0.042780, Validation Normalized Loss: 0.237492
+2025-05-09 22:22:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 22:22:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 22:34:32 - training.trainer - INFO - Epoch 33/80 - Train Loss: 0.040935, Train Normalized Loss: 0.241074
+2025-05-09 22:34:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 22:34:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 22:46:08 - training.trainer - INFO - Epoch 34/80 - Train Loss: 0.040062, Train Normalized Loss: 0.233000
+2025-05-09 22:46:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 22:46:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 22:57:44 - training.trainer - INFO - Epoch 35/80 - Train Loss: 0.041013, Train Normalized Loss: 0.233340
+2025-05-09 22:57:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 22:57:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 23:09:20 - training.trainer - INFO - Epoch 36/80 - Train Loss: 0.037016, Train Normalized Loss: 0.226850
+2025-05-09 23:13:58 - training.trainer - INFO - Validation Loss: 0.040814, Validation Normalized Loss: 0.228891
+2025-05-09 23:13:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 23:13:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 23:13:58 - training.trainer - INFO - Saved best model with validation loss: 0.040814
+2025-05-09 23:13:58 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 23:13:58 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 23:25:34 - training.trainer - INFO - Epoch 37/80 - Train Loss: 0.041662, Train Normalized Loss: 0.232713
+2025-05-09 23:25:34 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 23:25:34 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 23:37:08 - training.trainer - INFO - Epoch 38/80 - Train Loss: 0.037190, Train Normalized Loss: 0.223436
+2025-05-09 23:37:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 23:37:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-09 23:48:43 - training.trainer - INFO - Epoch 39/80 - Train Loss: 0.039881, Train Normalized Loss: 0.221574
+2025-05-09 23:48:43 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-09 23:48:43 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-10 00:00:19 - training.trainer - INFO - Epoch 40/80 - Train Loss: 0.039369, Train Normalized Loss: 0.233844
+2025-05-10 00:04:57 - training.trainer - INFO - Validation Loss: 0.048565, Validation Normalized Loss: 0.260248
+2025-05-10 00:04:57 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-10 00:04:57 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-10 00:16:33 - training.trainer - INFO - Epoch 41/80 - Train Loss: 0.037805, Train Normalized Loss: 0.228885
+2025-05-10 00:16:33 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-10 00:16:33 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 04:13:57 - training.experiment - INFO - Experiment 'baseline_64_layers' initialized with ID: baseline_64_layers
+2025-05-11 04:13:57 - __main__ - INFO - Setting device to cuda for resumed experiment
+2025-05-11 04:13:57 - training.experiment - INFO - Resumed training data loader from output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 04:13:57 - training.experiment - INFO - Resumed validation data loader from output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 04:13:57 - model.transformer - INFO - Using flow distribution mode: direct
+2025-05-11 04:13:57 - model.transformer - INFO - Using standard attention with flash attention: True
+2025-05-11 04:13:57 - model.transformer - INFO - Using layerwise repetition mode with 64 effective layers
+2025-05-11 04:13:57 - model.transformer - INFO - Unique layers: 1, repeat factor: 64
+2025-05-11 04:13:57 - model.transformer - INFO - Flow distribution mode: direct
+2025-05-11 04:13:57 - model.monotonic_flow - INFO - Num basis: 100
+2025-05-11 04:13:57 - model.monotonic_flow - INFO - Initial thetas: tensor([0.0050, 0.0150, 0.0250, 0.0350, 0.0450, 0.0550, 0.0650, 0.0750, 0.0850,
+        0.0950, 0.1050, 0.1150, 0.1250, 0.1350, 0.1450, 0.1550, 0.1650, 0.1750,
+        0.1850, 0.1950, 0.2050, 0.2150, 0.2250, 0.2350, 0.2450, 0.2550, 0.2650,
+        0.2750, 0.2850, 0.2950, 0.3050, 0.3150, 0.3250, 0.3350, 0.3450, 0.3550,
+        0.3650, 0.3750, 0.3850, 0.3950, 0.4050, 0.4150, 0.4250, 0.4350, 0.4450,
+        0.4550, 0.4650, 0.4750, 0.4850, 0.4950, 0.5050, 0.5150, 0.5250, 0.5350,
+        0.5450, 0.5550, 0.5650, 0.5750, 0.5850, 0.5950, 0.6050, 0.6150, 0.6250,
+        0.6350, 0.6450, 0.6550, 0.6650, 0.6750, 0.6850, 0.6950, 0.7050, 0.7150,
+        0.7250, 0.7350, 0.7450, 0.7550, 0.7650, 0.7750, 0.7850, 0.7950, 0.8050,
+        0.8150, 0.8250, 0.8350, 0.8450, 0.8550, 0.8650, 0.8750, 0.8850, 0.8950,
+        0.9050, 0.9150, 0.9250, 0.9350, 0.9450, 0.9550, 0.9650, 0.9750, 0.9850,
+        0.9950])
+2025-05-11 04:13:57 - model.monotonic_flow - INFO - Initial theta_raw: Parameter containing:
+tensor([-2.9444, -2.7678, -2.6150, -2.4800, -2.3589, -2.2488, -2.1477, -2.0541,
+        -1.9669, -1.8850, -1.8078, -1.7346, -1.6650, -1.5986, -1.5349, -1.4738,
+        -1.4149, -1.3581, -1.3031, -1.2498, -1.1981, -1.1477, -1.0986, -1.0507,
+        -1.0039, -0.9580, -0.9131, -0.8690, -0.8257, -0.7832, -0.7413, -0.7000,
+        -0.6592, -0.6190, -0.5793, -0.5400, -0.5011, -0.4626, -0.4244, -0.3866,
+        -0.3490, -0.3116, -0.2744, -0.2375, -0.2007, -0.1640, -0.1274, -0.0910,
+        -0.0546, -0.0182,  0.0182,  0.0546,  0.0910,  0.1274,  0.1640,  0.2007,
+         0.2375,  0.2744,  0.3116,  0.3490,  0.3866,  0.4244,  0.4626,  0.5011,
+         0.5400,  0.5793,  0.6190,  0.6592,  0.7000,  0.7413,  0.7832,  0.8257,
+         0.8690,  0.9131,  0.9580,  1.0039,  1.0507,  1.0986,  1.1477,  1.1981,
+         1.2498,  1.3031,  1.3581,  1.4149,  1.4738,  1.5349,  1.5986,  1.6650,
+         1.7346,  1.8078,  1.8850,  1.9669,  2.0541,  2.1477,  2.2488,  2.3589,
+         2.4800,  2.6150,  2.7678,  2.9444], requires_grad=True)
+2025-05-11 04:13:57 - model.monotonic_flow - INFO - Initialized MonotonicBasis with 100 basis functions
+2025-05-11 04:13:57 - model.monotonic_flow - INFO - Initialized MonotonicFlowPredictor (per_layer=False, num_layers=N/A, SNR range=[3.0, 15.0], flow range=[0.0, 1.0])
+2025-05-11 04:13:57 - model.transformer - INFO - Initialized monotonic flow predictor (per_layer=False, num_basis=100, flow_range=[0.0, 1.0])
+2025-05-11 04:13:57 - model.transformer - INFO - GMMTransformer created with 197,192 parameters
+2025-05-11 04:13:57 - model.factory - INFO - Created cluster prediction model with 197,704 parameters
+2025-05-11 04:13:58 - training.trainer - INFO - TensorBoard logging enabled at output/final_experiments/baseline_64_layers/tensorboard
+2025-05-11 04:13:58 - training.experiment - INFO - Experiment setup completed
+2025-05-11 04:13:58 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_64_layers/checkpoints/latest_model.pt (epoch 41)
+2025-05-11 04:13:58 - training.experiment - INFO - Will continue training for remaining 39 epochs
+2025-05-11 04:13:58 - training.trainer - INFO - Loaded checkpoint from output/final_experiments/baseline_64_layers/checkpoints/latest_model.pt (epoch 41)
+2025-05-11 04:13:58 - training.trainer - INFO - Starting training for 39 epochs (from epoch 42 to 80)
+2025-05-11 04:25:40 - training.trainer - INFO - Epoch 42/80 - Train Loss: 0.038798, Train Normalized Loss: 0.223226
+2025-05-11 04:25:40 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 04:25:40 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 04:37:22 - training.trainer - INFO - Epoch 43/80 - Train Loss: 0.038681, Train Normalized Loss: 0.221655
+2025-05-11 04:37:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 04:37:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 04:49:08 - training.trainer - INFO - Epoch 44/80 - Train Loss: 0.039835, Train Normalized Loss: 0.222128
+2025-05-11 04:54:03 - training.trainer - INFO - Validation Loss: 0.039116, Validation Normalized Loss: 0.215221
+2025-05-11 04:54:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 04:54:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 04:54:03 - training.trainer - INFO - Saved best model with validation loss: 0.039116
+2025-05-11 04:54:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 04:54:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 05:05:48 - training.trainer - INFO - Epoch 45/80 - Train Loss: 0.038719, Train Normalized Loss: 0.226069
+2025-05-11 05:05:48 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 05:05:48 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 05:17:35 - training.trainer - INFO - Epoch 46/80 - Train Loss: 0.039149, Train Normalized Loss: 0.227803
+2025-05-11 05:17:35 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 05:17:35 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 05:29:20 - training.trainer - INFO - Epoch 47/80 - Train Loss: 0.037528, Train Normalized Loss: 0.224353
+2025-05-11 05:29:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 05:29:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 05:41:05 - training.trainer - INFO - Epoch 48/80 - Train Loss: 0.041088, Train Normalized Loss: 0.225697
+2025-05-11 05:46:01 - training.trainer - INFO - Validation Loss: 0.042414, Validation Normalized Loss: 0.223489
+2025-05-11 05:46:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 05:46:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 05:57:45 - training.trainer - INFO - Epoch 49/80 - Train Loss: 0.037155, Train Normalized Loss: 0.212631
+2025-05-11 05:57:45 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 05:57:45 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 06:09:24 - training.trainer - INFO - Epoch 50/80 - Train Loss: 0.037927, Train Normalized Loss: 0.210477
+2025-05-11 06:09:24 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 06:09:24 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 06:20:49 - training.trainer - INFO - Epoch 51/80 - Train Loss: 0.038343, Train Normalized Loss: 0.216285
+2025-05-11 06:20:49 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 06:20:49 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 06:32:15 - training.trainer - INFO - Epoch 52/80 - Train Loss: 0.035672, Train Normalized Loss: 0.220207
+2025-05-11 06:36:47 - training.trainer - INFO - Validation Loss: 0.039565, Validation Normalized Loss: 0.226382
+2025-05-11 06:36:47 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 06:36:47 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 06:48:13 - training.trainer - INFO - Epoch 53/80 - Train Loss: 0.037304, Train Normalized Loss: 0.223105
+2025-05-11 06:48:13 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 06:48:13 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 06:59:37 - training.trainer - INFO - Epoch 54/80 - Train Loss: 0.035683, Train Normalized Loss: 0.211968
+2025-05-11 06:59:37 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 06:59:37 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 07:11:03 - training.trainer - INFO - Epoch 55/80 - Train Loss: 0.036072, Train Normalized Loss: 0.216770
+2025-05-11 07:11:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 07:11:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 07:22:28 - training.trainer - INFO - Epoch 56/80 - Train Loss: 0.037262, Train Normalized Loss: 0.213894
+2025-05-11 07:27:03 - training.trainer - INFO - Validation Loss: 0.039660, Validation Normalized Loss: 0.230469
+2025-05-11 07:27:03 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 07:27:03 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 07:38:29 - training.trainer - INFO - Epoch 57/80 - Train Loss: 0.035905, Train Normalized Loss: 0.214737
+2025-05-11 07:38:29 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 07:38:29 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 07:49:55 - training.trainer - INFO - Epoch 58/80 - Train Loss: 0.037827, Train Normalized Loss: 0.211899
+2025-05-11 07:49:55 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 07:49:55 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 08:01:21 - training.trainer - INFO - Epoch 59/80 - Train Loss: 0.039575, Train Normalized Loss: 0.221692
+2025-05-11 08:01:21 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 08:01:21 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 08:12:45 - training.trainer - INFO - Epoch 60/80 - Train Loss: 0.035428, Train Normalized Loss: 0.202185
+2025-05-11 08:17:17 - training.trainer - INFO - Validation Loss: 0.039370, Validation Normalized Loss: 0.219556
+2025-05-11 08:17:17 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 08:17:17 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 08:28:42 - training.trainer - INFO - Epoch 61/80 - Train Loss: 0.035148, Train Normalized Loss: 0.212914
+2025-05-11 08:28:42 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 08:28:42 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 08:40:08 - training.trainer - INFO - Epoch 62/80 - Train Loss: 0.038031, Train Normalized Loss: 0.210923
+2025-05-11 08:40:08 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 08:40:08 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 08:51:32 - training.trainer - INFO - Epoch 63/80 - Train Loss: 0.034332, Train Normalized Loss: 0.211581
+2025-05-11 08:51:32 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 08:51:32 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:02:58 - training.trainer - INFO - Epoch 64/80 - Train Loss: 0.036558, Train Normalized Loss: 0.218736
+2025-05-11 09:07:31 - training.trainer - INFO - Validation Loss: 0.040159, Validation Normalized Loss: 0.220887
+2025-05-11 09:07:31 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:07:31 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:18:56 - training.trainer - INFO - Epoch 65/80 - Train Loss: 0.038679, Train Normalized Loss: 0.204276
+2025-05-11 09:18:56 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:18:56 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:30:22 - training.trainer - INFO - Epoch 66/80 - Train Loss: 0.035317, Train Normalized Loss: 0.212514
+2025-05-11 09:30:22 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:30:22 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:41:46 - training.trainer - INFO - Epoch 67/80 - Train Loss: 0.034685, Train Normalized Loss: 0.208660
+2025-05-11 09:41:46 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:41:46 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:53:13 - training.trainer - INFO - Epoch 68/80 - Train Loss: 0.037815, Train Normalized Loss: 0.214321
+2025-05-11 09:57:44 - training.trainer - INFO - Validation Loss: 0.036257, Validation Normalized Loss: 0.208592
+2025-05-11 09:57:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:57:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 09:57:44 - training.trainer - INFO - Saved best model with validation loss: 0.036257
+2025-05-11 09:57:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 09:57:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 10:09:09 - training.trainer - INFO - Epoch 69/80 - Train Loss: 0.036905, Train Normalized Loss: 0.213661
+2025-05-11 10:09:09 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 10:09:09 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 10:20:36 - training.trainer - INFO - Epoch 70/80 - Train Loss: 0.037833, Train Normalized Loss: 0.219368
+2025-05-11 10:20:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 10:20:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 10:32:01 - training.trainer - INFO - Epoch 71/80 - Train Loss: 0.037492, Train Normalized Loss: 0.207601
+2025-05-11 10:32:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 10:32:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 10:43:28 - training.trainer - INFO - Epoch 72/80 - Train Loss: 0.039426, Train Normalized Loss: 0.215308
+2025-05-11 10:48:01 - training.trainer - INFO - Validation Loss: 0.040350, Validation Normalized Loss: 0.218422
+2025-05-11 10:48:01 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 10:48:01 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 10:59:28 - training.trainer - INFO - Epoch 73/80 - Train Loss: 0.036733, Train Normalized Loss: 0.217341
+2025-05-11 10:59:28 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 10:59:28 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 11:10:53 - training.trainer - INFO - Epoch 74/80 - Train Loss: 0.041507, Train Normalized Loss: 0.214686
+2025-05-11 11:10:53 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 11:10:53 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 11:22:19 - training.trainer - INFO - Epoch 75/80 - Train Loss: 0.036625, Train Normalized Loss: 0.213987
+2025-05-11 11:22:19 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 11:22:19 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 11:33:46 - training.trainer - INFO - Epoch 76/80 - Train Loss: 0.038654, Train Normalized Loss: 0.220515
+2025-05-11 11:38:20 - training.trainer - INFO - Validation Loss: 0.037338, Validation Normalized Loss: 0.221315
+2025-05-11 11:38:20 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 11:38:20 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 11:49:44 - training.trainer - INFO - Epoch 77/80 - Train Loss: 0.037175, Train Normalized Loss: 0.203675
+2025-05-11 11:49:44 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 11:49:44 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 12:01:10 - training.trainer - INFO - Epoch 78/80 - Train Loss: 0.037386, Train Normalized Loss: 0.212264
+2025-05-11 12:01:10 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 12:01:10 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 12:12:36 - training.trainer - INFO - Epoch 79/80 - Train Loss: 0.037394, Train Normalized Loss: 0.214937
+2025-05-11 12:12:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 12:12:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 12:24:01 - training.trainer - INFO - Epoch 80/80 - Train Loss: 0.035805, Train Normalized Loss: 0.210406
+2025-05-11 12:28:36 - training.trainer - INFO - Validation Loss: 0.038240, Validation Normalized Loss: 0.217677
+2025-05-11 12:28:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 12:28:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 12:28:36 - training.trainer - INFO - Saved training data loader state to output/final_experiments/baseline_64_layers/data_state.json
+2025-05-11 12:28:36 - training.trainer - INFO - Saved validation data loader state to output/final_experiments/baseline_64_layers/val_data_state.json
+2025-05-11 12:28:36 - training.trainer - INFO - Saved final checkpoint
+2025-05-11 12:28:36 - training.experiment - INFO - Training completed in 29678.33 seconds
+2025-05-11 12:28:36 - __main__ - INFO - Resumed experiment baseline_64_layers completed successfully

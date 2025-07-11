@@ -1,0 +1,130 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Output files
+tests/output/
+runs/
+results/
+
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# Backup files
+*.bak
+*.backup
+*.pyc.bak
+*~
+
+# Log files
+*.log
+logs/
+
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.tox/
+*.pid
+*.lock
+
+# Model artifacts and checkpoints
+*.pt
+*.pth
+*.pkl
+*.pickle
+models/
+checkpoints/
+experiments/
+wandb/
+.neptune/
+mlruns/
+
+# Data files (unless specifically tracked)
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.h5
+*.hdf5
+*.parquet
+
+# Documentation build
+docs/_build/
+docs/build/
+site/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Profiling data
+*.prof
+
+# Large files and datasets
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+output/test

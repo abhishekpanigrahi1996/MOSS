@@ -1,0 +1,89 @@
+{
+  "minimal": {
+    "validation_batch_size": 64,
+    "num_val_batches": 5,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse"],
+      "compare_with_kmeans": false,
+      "compute_detailed_metrics": false
+    },
+    "visualize": {
+      "enabled": false
+    }
+  },
+  "standard": {
+    "validation_batch_size": 64,
+    "num_val_samples": 32768,
+    "fixed_validation_data": true,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse", "wasserstein"],
+      "compare_with_kmeans": false,
+      "compute_detailed_metrics": false
+    },
+    "visualize": {
+      "enabled": false,
+      "visualize_every_n_epochs": 5,
+      "max_samples": 20,
+      "plot_dpi": 150,
+      "plot_formats": ["png"],
+      "plot_with_kmeans": true,
+      "plot_grid_size": 2
+    }
+  },
+  "comprehensive": {
+    "validation_batch_size": 64,
+    "num_val_batches": null,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse", "wasserstein", "energy"],
+      "compare_with_kmeans": true,
+      "compute_detailed_metrics": true
+    },
+    "visualize": {
+      "enabled": true,
+      "visualize_every_n_epochs": 1,
+      "max_samples": 50,
+      "plot_dpi": 300,
+      "plot_formats": ["png", "pdf"],
+      "plot_with_kmeans": true,
+      "plot_grid_size": 2,
+      "colormap": "viridis"
+    }
+  },
+  "visualization_focused": {
+    "validation_batch_size": 64,
+    "num_val_batches": 10,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse", "wasserstein"],
+      "compare_with_kmeans": true,
+      "compute_detailed_metrics": false
+    },
+    "visualize": {
+      "enabled": true,
+      "visualize_every_n_epochs": 1,
+      "max_samples": 100,
+      "plot_dpi": 300,
+      "plot_formats": ["png", "pdf", "svg"],
+      "plot_with_kmeans": true,
+      "plot_grid_size": 2,
+      "colormap": "viridis",
+      "save_animations": true
+    }
+  },
+  "performance_testing": {
+    "validation_batch_size": 128,
+    "num_val_batches": 2,
+    "metrics": {
+      "enabled": true,
+      "metrics": ["mse"],
+      "compare_with_kmeans": false,
+      "compute_detailed_metrics": false
+    },
+    "visualize": {
+      "enabled": false
+    }
+  }
+}

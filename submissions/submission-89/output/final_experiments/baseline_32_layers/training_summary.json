@@ -1,0 +1,10 @@
+{
+  "experiment_id": "baseline_32_layers",
+  "experiment_name": "baseline_32_layers",
+  "training_time": 20895.378649950027,
+  "epochs_completed": 80,
+  "final_train_loss": 0.0360685513315957,
+  "final_val_loss": 0.038695176249234464,
+  "best_val_loss": 0.03635673909002435,
+  "timestamp": "2025-05-11T04:13:11.226401"
+}
