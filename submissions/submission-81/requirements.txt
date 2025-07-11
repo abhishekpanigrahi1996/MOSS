@@ -1,0 +1,6 @@
+matplotlib==3.8.4
+numpy==2.2.4
+sparsemax==0.1.9
+torch==2.4.1
+torchsummary==1.5.1
+wonderwords==2.2.0
