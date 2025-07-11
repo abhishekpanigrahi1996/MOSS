@@ -1,0 +1,14 @@
+data:
+  batch_size: 128
+  num_subsets: 1000
+  val_batch_size: 128
+engine: engine.tweet.FixTensorFusion
+exp_name: tweet_prodconcat
+train:
+  fusion:
+    model: model.vanilla_fusion.ProductConcat
+  fusion_dim: 1536
+  hidden_dim: 32
+  lr: 0.001
+  max_epoch: 100
+  weight_decay: 0
